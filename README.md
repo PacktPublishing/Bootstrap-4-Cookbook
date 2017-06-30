@@ -23,11 +23,11 @@ The code will look like the following:
 
 In almost all the chapters of this book, the following technologies are used:
 
-*Node and NPM
-*Bower
-*Ruby and Jekyll
-*Git and Git Bash
-*Harp
+* Node and NPM
+* Bower
+* Ruby and Jekyll
+* Git and Git Bash
+* Harp
 
 Chapter 11, Bootstrap 4 with ASP.net Core, is specific because it requires that you have an
 installation of Visual Studio 2017 Community Edition and a .NET Core 1.x installation.
