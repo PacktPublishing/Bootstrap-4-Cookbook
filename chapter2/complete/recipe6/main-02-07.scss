@@ -1,0 +1,24 @@
+// Recipe 02-07
+
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+
+
+@import "./bower_components/bootstrap/scss/bootstrap.scss";
+
+
+body {
+	background: #E55D87; /* fallback for old browsers */
+	background: -webkit-linear-gradient(45deg, #E55D87 , #5FC3E4); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(45deg, #E55D87 , #5FC3E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+nav { 
+  text-color: white; 
+  
+}
+.bg-faded {
+  opacity: .95;
+}
+h1, h2, h3 {
+  font-family: 'Rock Salt', cursive;
+}

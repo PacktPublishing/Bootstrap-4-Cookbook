@@ -1,0 +1,57 @@
+<!--
+Recipe 201 - Classes used: container-fluid, container, bg-*, p-*, m-*, mt-*, mb-*, lead, text-center, text-white
+-->
+
+<div class="container-fluid bg-info p-5" id="one"
+ data-toggle="tooltip"
+ data-placement="bottom"
+ data-html="true"
+ title="<strong><u>A div with .container-fluid</u></strong><br>
+ This div has <em>no content</em>.<br>
+ Class .bg-info gives it <em>color</em>.<br>
+ Class .p-5 gives it <em>padding</em>!<br>
+ Class .p-5 makes it <em>visible</em>.<br><br>
+ <strong>Erase .p-5 and <em>it's gone</em>.<br>
+ (try it with dev tools)</strong><br><br>
+ Mouseover <em><small>the div to make the tooltip disappear on</small></em> mouseout."
+></div>
+
+<div class="container-fluid bg-info p-5 m-5" id="two"
+ data-toggle="tooltip"
+ data-placement="bottom"
+ data-html="true"
+ title="<strong><u>A div with .container-fluid</u></strong><br>
+ This div also has no content.<br>
+ Class .p-5 gives it <em>padding</em>!<br>
+ Class .m-5 gives it <em>margin</em>.
+ <br>"
+></div>
+
+<div class="container-fluid bg-info">
+ <div class="container bg-warning p-5" id="three"
+ data-toggle="tooltip"
+ data-placement="top"
+ data-html="true"
+ title="<strong><u>This div.container is inside div.container-fluid</u></strong><br>
+ Both divs have no content.<br>
+ Inner div.container's padding comes from its .p-5!<br>
+ .p-5 makes both divs visible</em>.
+ <br>"
+ ></div>
+</div>
+
+<div class="container bg-warning p-5 mt-5 mb-2" id="four"
+ data-toggle="tooltip"
+ data-placement="top"
+ data-html="true"
+ title="<strong><u>This div.container is not wrapped in .container-fluid</u></strong><br>
+ It's parent is <em>body</em>.<br>
+ Its margin-top is set by .mt-5.<br>
+ Its margin-bottom is .mt-2</em>.
+ .bg-warning gives it <em>color</em>.
+ <br>"
+></div>
+
+<div class="container-fluid bg-inverse p-5" id="five">
+ <p class="lead text-center text-white"> This bottom div is here just to help visualise the difference between .mt-5 and .mb-2 used on the above div.container</p>
+</div>

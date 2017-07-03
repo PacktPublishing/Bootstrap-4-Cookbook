@@ -1,0 +1,33 @@
+<h2>Extending Tether</h2><p>Tether has a module system which can be used to modify Tether&#39;s positioning, or just do something each time the Tether is moved.</p>
+<p>Tether has an array called <code>Tether.modules</code>, push onto it to add a module:</p>
+<pre><code class="language-coffeescript">Tether.modules.push
+  position: ({top, left}) -&gt;
+    top += 10
+
+    {top, left}
+</code></pre>
+<h4>Position</h4><p>Your position function can either return a new object with <code>top</code> and <code>left</code>, <code>null</code>/<code>undefined</code> to leave the coordinates unchanged, or
+<code>false</code> to cancel the positioning.</p>
+<p>The position function is passed an object with the following elements:</p>
+<pre><code class="language-javascript">{
+  left, // The element&#39;s new position, from the top left corner of the page
+  top,
+  targetAttachment, // The targetAttachment, with &#39;auto&#39; resolved to an actual attachment
+  targetPos, // The coordinates of the target
+  attachment, // The attachment, as passed in the option
+  elementPos, // The coordinates of the element
+  offset, // The offset, after it&#39;s converted into pixels and the manual offset is added
+  targetOffset, // The attachment is converted into an offset and is included in these values
+  manualOffset, // The manual offset, in pixels
+  manualTargetOffset
+}
+</code></pre>
+<p>It is called with the Tether instance as its context (<code>this</code>).</p>
+<h4>Initialize</h4><p>Modules can also have an <code>initialize</code> function which will be called when a new tether is created.  The initialize function
+is also called with the Tether instance as its context.</p>
+<pre><code class="language-coffeescript">Tether.modules.push
+  initialize: -&gt;
+    console.log &quot;New Tether Created!&quot;, @
+</code></pre>
+<h4>Examples</h4><p><a href="https://github.com/HubSpot/tether/blob/master/src/js/constraint.js">Constraints</a> and <a href="https://github.com/HubSpot/tether/blob/master/src/js/shift.js">shift</a> are both implemented as modules.
+<a href="https://github.com/HubSpot/tether/blob/master/src/js/markAttachment.js">Mark Attachment</a> is used by the docs.</p>

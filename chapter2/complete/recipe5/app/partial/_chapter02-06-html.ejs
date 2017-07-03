@@ -1,0 +1,27 @@
+<div class="container-fluid">
+ <div class="row bg-inverse m-4 p-4 lead">
+ <div class="col-md-6 bg-success p-3 text-white">This div takes up 6 of 12 columns above the <code>md</code> breakpoint. Below the <code>md</code> breakpoint, it stacks horizontally (since it takes up the full width of the screen at those resolutions).</div>
+ <div class="col-md-6 bg-danger text-white p-3">This column acts exactly like the previous one, but a different effect is achieved using different classes to color the text and the background.</div>
+ </div>
+<div>
+
+<div class="container-fluid bg-success pt-4 pb-4 mb-5 lead">
+ <div class="row p-2 m-2 bg-faded">
+ <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 bg-info text-white p-3">This column starts off as 100% wide on extra-small screens. This is set with the class <code>.col-12</code>. On every additional breakpoint above <code>xs</code>, it is made narrower by additional 2 of 12 columns for the specific resolution. At the widest resolution, it takes up 4 of 12 columns, as set with the <code>.col-xl-4</code> class.</div>
+ <div class="col-12 col-sm-2 col-md-4 col-lg-6 col-xl-8 bg-warning p-2">This div too starts off as 100% wide on extra small screens, so it is stacking under the first column. On every additional breakpoint, it starts off only one-third of the screen, and grows by one-sixth for every higher breakpoint. Note that the first div has all-arround padding set to <code>.p-3</code>, and the second div has all-around padding set to <code>.p-2</code>. <mark>The sum of all the paddings of divs in a row cannot be greater than p-5 (simply, .p-2 + .p-3).</mark> Otherwise, the layout would break.</div>
+ </div>
+
+ <div class="row p-5 m-3 bg-faded lead">
+ <div class="col-6 bg-danger text-white display-4 pt-5 ">The width of this div is set with <code>.col-6</code>. Only at this smallest resolution is the pattern of col-* different from all the other ones.</div>
+ <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 h4 bg-info text-white pt-5">At this smallest resolution, there is no breakpoint specified between the "col" and the number. Thus, <code>.col-6</code>. On all the other resolutions above <code>xs</code>, the breakpoint abbreviation is also used in the class name. For example:
+ <ul>
+ <li class="">.col-sm-4</li>
+ <li class="">.col-md-4</li>
+ <li class="">.col-lg-4</li>
+ <li class="">.col-xl-4</li>
+ </ul>
+ Note: In practice, it is obvious that adding all these columns is redundant. If we set the width for this div to 4 of 12 columns at the <code>sm</code> resolution, it will keep the same width for all the above resolutions too, since Bootstrap is mobile-first.
+ This code was obviously used to simply show the naming pattern for all the .col-* classes. In the next recipes, we will show the right way to actually use these classes.
+ </div>
+ </div>
+</div>

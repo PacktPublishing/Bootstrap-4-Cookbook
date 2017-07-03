@@ -1,0 +1,33 @@
+<h2>Why You Should Use Tether</h2><p>Virtually every app includes some sort of overlay attached to an element on the page.
+Things like <a href="http://github.hubspot.com/tooltip/docs/welcome">tooltips</a>,
+<a href="http://github.hubspot.com/select/docs/welcome">dropdowns</a>, <a href="http://github.hubspot.com/drop/docs/welcome">hover-activated info boxes</a>, etc.</p>
+<p>Those elements need to be attached to something on the page.  Actually placing them next to
+the element in the DOM causes problems though, if any parent element is anything
+but <code>overflow: visible</code>, the element gets cut off.  So you need absolute positioning
+in the body.</p>
+<p>Some of the time absolute positioning is right, but what about if the thing we&#39;re
+attached to is fixed to the center of the screen?  We&#39;ll have to move it every
+time the user scrolls.  What about if the element is in a scrollable container,
+if the overlay is inside of it (so no clipping), it would be cool if the code
+were smart enough to move it inside when that area is scrolled.  That way we
+need to reposition it even less.</p>
+<p>It would also be nice if the code could somehow figure out whether positioning it
+from the top, bottom, left, or right would result in the fewest repositionings
+as the user scrolls or resizes.</p>
+<p>Most of the time you&#39;re building these elements it would be nice for the element to
+flip to the other side of the element if it hits the edge of the screen, or a scrollable
+container it might be in.  It would be nice if we could confine the element
+to within some area, or even hide it when it leaves.</p>
+<p>It would be nice for the element to be repositioned with CSS transforms
+rather than top and left when possible, to allow the positioning to be done entirely
+in the GPU.</p>
+<p>Now that the positioning is so fancy, you&#39;re going to use it for more and more
+elements.  It would be cool if the library could optimize all of their repositioning
+into a single repaint.</p>
+<p>All of that is baked into Tether.</p>
+<h3>tl;dr</h3><ul>
+<li>Optimized GPU-accelerated repositioning for 60fps scrolling</li>
+<li>Reliable positioning on any possible corner, edge or point in between.</li>
+<li>Support for repositioning or pinning the element when it would be offscreen</li>
+<li>Designed to be embeddable in other libraries</li>
+</ul>

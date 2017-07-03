@@ -1,0 +1,27 @@
+<h2>Repositioning</h2><p>Tethers will be automatically repositioned when the page is resized, and when any element containing the Tether is scrolled.
+If the element moves for some other reason (e.g. with JavaScript), Tether won&#39;t know to reposition the element.</p>
+<h4>Manually Repositioning</h4><p>The simplest way to reposition every Tether on the page is to call <code>Tether.position()</code>.  It will efficiently reposition every
+Tether in a single repaint, making it more efficient than manually repositioning many Tethers individually.</p>
+<pre><code class="language-javascript">Tether.position()
+</code></pre>
+<h4>Repositioning a Single Tether</h4><p>If you have many Tethers on screen, it may be more efficient to just reposition the tether that needs it.  You can do this
+by calling the <code>.position</code> method on the Tether instance:</p>
+<pre><code class="language-javascript">tether = new Tether({ ... })
+
+// Later:
+tether.position()
+</code></pre>
+<h4>Tethering Hidden Elements</h4><p>If you are creating a tether involving elements which are <code>display: none</code>, or not actually in the DOM, 
+your Tether may not be able to position itself properly.  One way around this is to
+ensure that a position call happens after all layouts have finished:</p>
+<pre><code class="language-javascript">myElement.style.display = &#39;block&#39;
+
+tether = new Tether({ ... })
+
+setTimeout(function(){
+  tether.position();
+})
+</code></pre>
+<p>In general however, you shouldn&#39;t have any trouble if both the element and the target are visible and in the DOM when you
+create the Tether.  If that is not the case, create the Tether disabled (option <code>enabled</code>: <code>false</code>), and enable it when
+the elements are ready.</p>

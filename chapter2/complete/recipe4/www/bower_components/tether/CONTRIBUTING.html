@@ -1,0 +1,49 @@
+<h1>Contributing Guide</h1><p>You will need:</p>
+<ul>
+<li>Node.js/io.js &amp; npm</li>
+<li>Bower</li>
+<li>Gulp</li>
+</ul>
+<h2>Getting started</h2><ol>
+<li>Fork the project</li>
+<li>Clone your forked project by running <code>git clone git@github.com:{
+YOUR_USERNAME }/tether.git</code></li>
+<li>Run <code>npm install</code> to install both node modules and bower components</li>
+<li>Test that you can build the source by moving/renaming the existing <code>dist</code>
+directory and running <code>npm run build</code></li>
+<li>Assuming everything went well, you should now have a <code>dist</code> directory that
+matches the one you moved in step 4</li>
+</ol>
+<h2>Writing code!</h2><p>We use <code>gulp</code> to facilitate things like transpilation, minification, etc. so
+can you focus on writing relevant code. If there is a fix or feature you would like
+to contribute, we ask that you take the following steps:</p>
+<ol>
+<li><p>Most of the <em>editable</em> code lives in the <code>src</code> directory while built code
+will end up in the <code>dist</code> directory upon running <code>npm run build</code>.</p>
+</li>
+<li><p>Depending on how big your changes are, bump the version numbers appropriately
+in <code>bower.json</code> and <code>package.json</code>. We try to follow semver, so a good rule
+of thumb for how to bump the version is:</p>
+<ul>
+<li>A fix to existing code, perform a patch bump e.g. x.x.0 -&gt; x.x.1</li>
+<li>New feature, perform a minor bump e.g. x.0.x -&gt; x.1.x</li>
+<li>Breaking changes such a rewrite, perform a major bump e.g.
+1.x.x -&gt; 2.x.x</li>
+</ul>
+<p>Versioning is hard, so just use good judgement and we&#39;ll be more than happy
+to help out.</p>
+<p><strong>NOTE</strong>: There is a <code>gulp</code> task that will automate some of the versioning.
+You can run <code>gulp version:{type}</code> where type is <code>patch|minor|major</code> to
+update both <code>bower.json</code> and <code>package.json</code> as well as add the appropriate
+git tag.</p>
+</li>
+<li><p>Provide a thoughtful commit message and push your changes to your fork using
+<code>git push origin master</code> (assuming your forked project is using <code>origin</code> for
+the remote name and you are on the <code>master</code> branch).</p>
+</li>
+<li><p>Open a Pull Request on GitHub with a description of your changes.</p>
+</li>
+</ol>
+<h2>Testing</h2><p>Work in progress. We are hoping to add some tests, so if you would like to help
+us get started, feel free to contact us through the Issues or open a Pull
+Request.</p>

@@ -1,0 +1,14 @@
+// Recipe 2-5
+$enable-rounded: false;
+$white: whitesmoke;
+$border-width: 1px;
+$font-size-base: 1rem;
+
+$grid-columns: 5;
+$grid-gutter-width-base: 0;
+
+
+@import "./bower_components/bootstrap/scss/bootstrap.scss";
+
+
+.img-fluid {margin: 0;}
