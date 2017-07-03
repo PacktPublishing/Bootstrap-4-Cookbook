@@ -1,0 +1,16 @@
+/*
+ For this mixin, it is enough to pass one parameter
+  to the border-radius mixin. The parameter is specified in round brackets: ()
+*/
+
+.btn-tomato {
+ @include border-radius(2em)
+}
+
+.btn-green {
+ @include border-radius(1.2em)
+}
+
+.btn-purple {
+ @include border-radius(0)
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>
+        Welcome to Chapter 4
+    </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="">
+
+    <nav class="navbar navbar-toggleable-md navbar-dark bg-faded">
+ <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+ </button>
+ <a class="navbar-brand" href="index.html">Chapter 4</a>
+
+ <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+ <ul class="navbar-nav mr-auto">
+ <li class="nav-item active">
+
+ <li class="nav-item dropdown">
+ <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
+ <div class="dropdown-menu" aria-labelledby="dropdown01">
+ <a class="dropdown-item" href="recipe04-01">1 - Creating Custom Alerts and Positioning them in the Viewport</a>
+ <a class="dropdown-item" href="recipe04-02">2 - Making Full-page Modals</a>
+ <a class="dropdown-item" href="recipe04-03">3 - Altering the Behavior of Popups using Tether Options</a>
+ <a class="dropdown-item" href="recipe04-04">4 - Controlling the Color and Opacity of Tooltips using Sass Variables</a>
+ <a class="dropdown-item" href="recipe04-05">5 - Using Bootstrap's Sass Mixins to Create Custom Buttons</a>
+ <a class="dropdown-item" href="recipe04-06">6 - Adjusting the Rounding of corners on buttons and button groups</a> 
+ <a class="dropdown-item" href="recipe04-07">7 - Controlling the Number of Card Columns on Different Breakpoints with SCSS</a>
+ <a class="dropdown-item" href="recipe04-08">8 - Making Cards Responsive</a>
+ <a class="dropdown-item" href="recipe04-09">9 - Easily Positioning Inline Forms</a>
+ </div>
+ </ul>
+ </div>
+ </nav>
+
+        <div class="container">
+
+  <div class="mt-5">
+    <h1>Welcome to Chapter 4</h1>
+	
+	<div class="mt-2 text-justify">This webpage contains the recipes from the 4th chapter of <a href="#" class="bg-faded">Bootstrap 4 Cookbook</a>:
+	    <ul class="mt-2">
+	    	<li>Author: <a href="#" class="bg-faded">Ajdin Imsirovic</a></li>
+	    	<li>Technical Reviewer: <a href="#" class="bg-faded">Zlatko Alomerovic</a></li>
+	    	<li>Publisher: <a href="#" class="bg-faded">Packt Publishing</a></li>
+	    </ul>
+    </div>
+
+</div><!-- /.container --></div>
+
+	 <!-- Bootstrap core JavaScript
+ ================================================== -->
+ <!-- Placed at the end of the document so the pages load faster -->
+     <script src="js/jquery.js"></script>
+    <script src="js/tether.js"></script>
+    <script src="js/bootstrap.js"></script>    
+	
+	<script>
+
+$(document).ready(function() {
+	$(".alert-warning").delay(1000).fadeIn(500);
+	$(".alert-info").delay(3000).fadeIn(500);
+	$(".alert-success").delay(4000).fadeIn(500);	
+	$(".alert-danger").delay(5500).fadeIn(500);
+});
+
+$(".alert-warning").on("click", "button.close", function() {
+    $(this).parent().hide('fast', function() {
+		$(this).remove();
+	});
+});
+
+$(".alert-info").on("click", "button.close", function() {
+    $(this).parent().hide('slow', function() {
+		$(this).remove();
+	});
+});
+
+$(".alert-success").on("click", "button.close", function() {
+    $(this).parent().animate({opacity: 0}, 1500).hide('fast', function() {
+		$(this).remove();
+	});
+});
+
+$(".alert-danger").on("click", "button.close", function() {
+    $(this).parent().slideUp('slow', function() {
+		$(this).remove();
+	});
+});
+</script>
+
+
+
+</body>
+</html>

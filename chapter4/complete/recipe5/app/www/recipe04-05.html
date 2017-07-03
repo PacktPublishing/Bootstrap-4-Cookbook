@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>
+        Recipe 04-05: Using Bootstrap's Sass Mixins to Create Custom Buttons
+    </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="">
+
+    <nav class="navbar navbar-toggleable-md navbar-dark bg-faded">
+ <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+ <span class="navbar-toggler-icon fa fa-bars"></span>
+ </button>
+ <a class="navbar-brand" href="index.html">Chapter 4</a>
+
+ <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+ <ul class="navbar-nav mr-auto">
+ <li class="nav-item active">
+
+ <li class="nav-item dropdown">
+ <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
+ <div class="dropdown-menu" aria-labelledby="dropdown01">
+ <a class="dropdown-item" href="recipe04-01">1 - Creating Custom Alerts and Positioning them in the Viewport</a>
+ <a class="dropdown-item" href="recipe04-02">2 - Making Full-page Modals</a>
+ <a class="dropdown-item" href="recipe04-03">3 - Altering the Behavior of Popups using Tether Options</a>
+ <a class="dropdown-item" href="recipe04-04">4 - Controlling the Color and Opacity of Tooltips using Sass Variables</a>
+ <a class="dropdown-item" href="recipe04-05">5 - Using Bootstrap's Sass Mixins to Create Custom Buttons</a>
+ <a class="dropdown-item" href="recipe04-06">6 - Adjusting the Rounding of corners on buttons and button groups</a> 
+ <a class="dropdown-item" href="recipe04-07">7 - Controlling the Number of Card Columns on Different Breakpoints with SCSS</a>
+ <a class="dropdown-item" href="recipe04-08">8 - Making Cards Responsive</a>
+ <a class="dropdown-item" href="recipe04-09">9 - Easily Positioning Inline Forms</a>
+ </div>
+ </ul>
+ </div>
+ </nav>
+
+        <div class="container">
+
+  <div class="mt-5">
+    <h1 class="mb-2">Recipe 04-05: Using Bootstrap's Sass Mixins to Create Custom Buttons</h1>
+	<h3 class="text-info mb-3">List of recipe-related official Bootstrap documentation</h3>
+	<p><a href="https://v4-alpha.getbootstrap.com/components/buttons/" target="_blank">Link to bootstrap buttons docs</a></p>	
+	<p><a href="https://v4-alpha.getbootstrap.com/components/button-group/" target="_blank">Link to bootstrap button-groups docs</a></p>	
+	<p><a href="https://v4-alpha.getbootstrap.com/components/dropdowns/" target="_blank">Link to bootstrap dropdowns docs</a></p>	
+	<p><a href="https://v4-alpha.getbootstrap.com/components/pagination/" target="_blank">Link to bootstrap pagination docs</a></p>
+	
+</div><!-- /.container --> 
+
+<h3 class="mt-5 mb-3">Here is an example of using the Bootstrap sass mixin to create a custom button</h3>
+
+<p>First, we will import the mixins into our <code>main.scss</code> file, using the following <code>@import</code> statement:
+<code>@import "./bower_components/bootstrap/scss/_mixins.scss";</code></p>
+
+<p>Next, we will add the <code>@import</code> for the custom scss file for this recipe (recipe 5 of chapter 4).</p>
+
+<p>Finally, we'll add the custom code for the button, by specifying the values as described in the code comment.</p>
+
+<a class="btn btn-tomato" href="#" role="button">Custom Button (Tomato)</a>
+<button class="btn btn-green" type="button">Custom Button (Green)</button>
+<input class="btn btn-purple" type="button" value="Custom Button (Purple)">
+<br>
+<br>
+<a class="btn btn-outline-tomato" href="#" role="button">Custom Button (Tomato)</a>
+<button class="btn btn-outline-green" type="button">Custom Button (Green)</button>
+<input class="btn btn-outline-purple" type="button" value="Custom Button (Purple)"></div>
+
+	 <!-- Bootstrap core JavaScript
+ ================================================== -->
+ <!-- Placed at the end of the document so the pages load faster -->
+     <script src="js/jquery.js"></script>
+    <script src="js/tether.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<script>
+  $(function () {
+    $('[data-toggle="popover"]').popover({
+    trigger: 'hover',             // trigger: 'focus',
+    delay: { "show": 500, "hide": 100 },
+    attachment: 'top left',
+    targetAttachment: 'top right',
+    constraints: [
+      {
+        to: 'window',
+        pin: true
+      }
+    ]   // constraints
+    }); // popover
+  }); // function
+</script>
+

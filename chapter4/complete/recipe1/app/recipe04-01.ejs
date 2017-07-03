@@ -1,0 +1,59 @@
+<div class="container">
+
+  <div class="mt-5">
+    <h1><%- title %></h1>
+	<p><a href="https://v4-alpha.getbootstrap.com/components/alerts/" target="_blank">Link to bootstrap alerts docs</a></p>
+	
+</div><!-- /.container --> 
+
+<p class="lead">This is an example of alerts popping up in the top right corner, with a high z-index so that they appear above all the other elements on the page.</p>
+
+<p class="">There are 4 alerts that will show up in the top right corner.</p>
+
+<p>The first is a warning alert, the second is an info alert, the third is a sucess alert and the fourth is a danger alert.</p>
+
+<p>On all the alerts, the html attribute of <code>data-dismiss="alert"</code> is removed from the html.</p>
+
+<p>We are adding a custom class of <code>.alerts-top-right</code> on the alert container. We are also using the classes of <code>.col-12</code> and <code>.col-md-5</code>, so that on screens under the <code>md</code> breakpoint, the alert spans the full width of the viewport, minus the 50px padding (set in the <code>.alerts-top-right</code> class). Above the <code>md</code> breakpoint, the alert will take up 5 of 12 columns of the available screen space.</p>
+
+<p>To make the alerts behave the way we want, we are using custom jQuery.</p>
+
+<p>Looking at this recipes's jQuery code, we can see that we are setting delays on appearance of each of the alerts, followed by the .fadeIn() jQuery function. This is how the alerts get onto our screen.</p>
+
+<p>In order to remove them, since we are overriding the default Bootstrap behavior, we will target the <code>button.close</code>, of the specific alert, and apply various jQuery effects on them.</p>
+
+<p>The default Bootstrap behavior when using <code>data-dismiss="alert"</code> is that it removes the alert from the DOM. Since we are overriding this behavior, we must make sure that the element is removed, and we achieve that in our jQuery using this line of code: <code>$(this).remove();</code>. This way, we achieve the same end result as with the default Bootstrap alerts behaviour, so that the alert element in question is being removed from the DOM.</p>
+
+
+<div class="alerts-top-right col-12 col-md-5">
+	<div class="alert alert-warning alert-dismissible fade show" role="alert">
+	  <button type="button" class="close" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	  </button>
+	  <strong>Warning!</strong> Lorem ipsum dolor <a href="#" class="alert-link">sit amet</a>.
+	</div>
+
+	<div class="alert alert-info alert-dismissible fade show" role="alert">
+	  <button type="button" class="close" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	  </button>
+	  <strong>Info!</strong> Lorem ipsum dolor sit amet, <a href="#" class="alert-link"> consectetur adipisicing elit</a>.
+	</div>
+
+	<div class="alert alert-success alert-dismissible fade show" role="alert">
+	  <button type="button" class="close" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	  </button>
+	  <strong>Success!</strong> Ad, dignissimos consequuntur <a href="#" class="alert-link">accusantium officia</a>.
+	</div>
+
+	<div class="alert alert-danger alert-dismissible fade show" role="alert">
+	  <button type="button" class="close" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	  </button>
+	  <strong>Danger!</strong> Lorem ipsum dolor <a href="#" class="alert-link">sit amet</a>.
+	</div>
+
+
+</div>
+

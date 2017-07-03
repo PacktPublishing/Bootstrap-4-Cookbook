@@ -1,0 +1,27 @@
+blockquote.blockquote {
+  padding: 2rem 2rem 2rem 4rem;
+  margin: 2rem;
+  quotes: "\201C" "\201D";
+  position: relative; }
+
+blockquote:before {
+  content: open-quote;
+  font-family: Georgia, serif;
+  font-size: 12rem;
+  opacity: .04;
+  font-weight: bold;
+  position: absolute;
+  top: -6rem;
+  left: 0; }
+
+blockquote:after {
+  content: close-quote;
+  font-size: 12rem;
+  opacity: .04;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  position: absolute;
+  bottom: -11.3rem;
+  right: 0; }
+
+/*# sourceMappingURL=main-03-04.css.map */

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <meta name="description" content="">
+ <meta name="author" content="">
+ <link rel="icon" href="../../favicon.ico">
+
+ <title>Recipe 3: Enriching Text Content with Bootstrap Typography Classes</title>
+
+ <!-- Bootstrap core CSS -->
+ 
+<link href="css/main.css" rel="stylesheet">
+
+ </head>
+
+ <body class="bg-faded-green">
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+ <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+ <span class="navbar-toggler-icon"></span>
+ </button>
+ <a class="navbar-brand" href="index.html">Chapter 3</a>
+
+ <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+ <ul class="navbar-nav mr-auto">
+ <li class="nav-item active">
+
+ <li class="nav-item dropdown">
+ <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
+ <div class="dropdown-menu" aria-labelledby="dropdown01">
+ <a class="dropdown-item" href="recipe1">1 - Extend the Text Classes of .display-* and Add Hover Effects with Hover.css</a>
+ <a class="dropdown-item" href="recipe2">2 - Create Comment Sections using Media Objects </a>
+ <a class="dropdown-item" href="recipe3">3 - Style Text Content with Bootstrap Typography Classes</a>
+ <a class="dropdown-item" href="recipe4">4 - Customize the Blockquote Element with CSS</a> 
+ <a class="dropdown-item" href="recipe5">5 - Extend Blockquote Styles with Sass</a>
+ <a class="dropdown-item" href="recipe6">6 - Align Text Around Images</a>
+ <a class="dropdown-item" href="recipe7">7 - Wrap Text Around Rounded Images</a>
+ <a class="dropdown-item" href="recipe8">8 - Style a Pricing Section using Bootstrap's Default Table Classes</a>
+ <a class="dropdown-item" href="recipe9">9 - Style a Pricing Section by Customizing Bootstrap's Table Classes</a>
+ </div>
+ </li>
+
+  <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+ </li>
+ </ul>
+ <!-- this form element will be used in Chapter 4 
+ <form class="form-inline my-2 my-lg-0">
+ <input class="form-control mr-sm-2" type="text" placeholder="Search">
+ <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+ </form>
+ -->
+ </div>
+ </nav>
+
+<div class="container bg-white mt-5 rounded">
+<h1>Chapter 3, Recipe 3:</h1>
+    <p class="lead">Style Text Content with Bootstrap Typography Classes</p>
+
+<!-- Let's apply the exisiting default Bootstrap styles to a paragraph of text, as follows: -->
+
+  <p class="display-4">This is just a regular paragraph.</p>
+  <p class="display-3"><span class="text-muted">This is an example of muted text</span>.</p>
+  <p class="display-2">
+    <span class="text-primary">All the </span>
+    <span class="text-success"> contextual Bootstrap</span>
+    <span class="text-info bg-primary"> colors have</span> 
+    <span class="text-warning"> their specific</span>
+    <span class="text-danger"> text color</span>
+    <span class="text-white bg-inverse"> classes</span>.
+  </p>
+  <p class="h3">Just another h3 <mark>paragraph</mark>.</p>
+  <p class="h3">And <mark>here is <span class="align-text-bottom">another</span><span class="align-text-top"> one</span></mark>.
+</p></div>
+
+<!-- Let's play around with those now -->
+<div class="container mt-5">
+  <div>
+    <div class="d-inline">Lorem ipsum dolor sit amet, <span class="d-block">consectetur</span> adipisicing elit. Dolor ratione, voluptatibus debitis veniam rem suscipit.
+    </div>
+  </div>
+
+<div class="container mt-5">
+  <!-- Use $font-family-base, $font-size-base, $line-height-base attributes as our typographic base applied to the <body> -->
+
+  <!-- Set the global link color via $link-color and apply link underlines only on :hover -->
+
+  <!-- These styles can be found within _reboot.scss, and the global variables are defined in _variables.scss -->
+
+</div></div>
+
+
+    
+ <!-- Bootstrap core JavaScript
+ ================================================== -->
+ <!-- Placed at the end of the document so the pages load faster -->
+     <script src="js/jquery.js"></script>
+    <script src="js/tether.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://raw.githubusercontent.com/adobe-webplatform/css-shapes-polyfill/master/shapes-polyfill.min.js"></script>
+    <script>
+      $('#comment-3-like').on("click", function (e) {
+        e.preventDefault();
+        $('#custom-alert-3-like').hide().html('<div class="alert alert-success alert-dismissible fade show mt-3" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong>You have liked this comment!</strong></div>').fadeIn(800);
+      });
+      $('#comment-3-tweet').on("click", function (e) {
+        e.preventDefault();
+        $('#custom-alert-3-tweet').hide().html('<div class="alert alert-twitter alert-dismissible fade show mt-3" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong>You have tweeted this comment!</strong></div>').fadeIn(800);
+      });
+      $('#comment-3-add-to-fb').on("click", function (e) {
+        e.preventDefault();
+        $('#custom-alert-3-facebook').hide().html('<div class="alert alert-facebook alert-dismissible fade show mt-3" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong>You have shared this comment on Facebook!</strong></div>').fadeIn(800);
+      });
+    </script>
+
+
+
+ </body>
+</html>

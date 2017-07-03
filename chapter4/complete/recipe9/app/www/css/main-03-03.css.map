@@ -1,0 +1,8 @@
+{
+"version": 3,
+"mappings": "AAAA,SAAU;EACR,gBAAgB,EAAE,KAAK",
+"sources": ["../main-03-03.scss"],
+"sourcesContent": [".bg-white {\n  background-color: white;\n}"],
+"names": [],
+"file": "main-03-03.css"
+}

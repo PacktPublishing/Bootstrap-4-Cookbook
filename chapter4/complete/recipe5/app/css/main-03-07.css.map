@@ -1,0 +1,8 @@
+{
+"version": 3,
+"mappings": "AAAA,sCAAuC;EACrC,WAAW,EAAE,IAAI;EACjB,qBAAqB,EAAC,QAAQ;EAC9B,aAAa,EAAC,QAAQ;;AAExB,qCAAsC;EACpC,YAAY,EAAE,IAAI;EAClB,qBAAqB,EAAC,QAAQ;EAC9B,aAAa,EAAC,QAAQ",
+"sources": ["../main-03-07.scss"],
+"sourcesContent": [".wrap-text-around .circle-placed-right {\n  margin-left: 3rem;\n  -webkit-shape-outside:circle();\n  shape-outside:circle();\n}\n.wrap-text-around .circle-placed-left {\n  margin-right: 3rem;\n  -webkit-shape-outside:circle();\n  shape-outside:circle();\n}"],
+"names": [],
+"file": "main-03-07.css"
+}

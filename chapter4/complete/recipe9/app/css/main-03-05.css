@@ -1,0 +1,17 @@
+/*
+FROM _type.scss, line 110:
+
+.blockquote {
+  padding: ($spacer / 2) $spacer;
+  margin-bottom: $spacer;
+  font-size: $blockquote-font-size;
+  border-left: $blockquote-border-width solid $blockquote-border-color;
+}
+*/
+.blockquote {
+  background: white;
+  -webkit-box-shadow: 0px 10px 5px -8px #508643;
+  -moz-box-shadow: 0px 10px 5px -8px #508643;
+  box-shadow: 0px 10px 5px -8px #508643; }
+
+/*# sourceMappingURL=main-03-05.css.map */

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <meta name="description" content="">
+ <meta name="author" content="">
+ <link rel="icon" href="../../favicon.ico">
+
+ <title>Recipe 9: Styling a Pricing Section by Customizing Bootstrap's Table Classes</title>
+
+ <!-- Bootstrap core CSS -->
+ 
+<link href="css/main.css" rel="stylesheet">
+
+ </head>
+
+ <body class="bg-faded-green">
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+ <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+ <span class="navbar-toggler-icon"></span>
+ </button>
+ <a class="navbar-brand" href="index.html">Chapter 3</a>
+
+ <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+ <ul class="navbar-nav mr-auto">
+ <li class="nav-item active">
+
+ <li class="nav-item dropdown">
+ <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
+ <div class="dropdown-menu" aria-labelledby="dropdown01">
+ <a class="dropdown-item" href="recipe1">1 - Extend the Text Classes of .display-* and Add Hover Effects with Hover.css</a>
+ <a class="dropdown-item" href="recipe2">2 - Create Comment Sections using Media Objects </a>
+ <a class="dropdown-item" href="recipe3">3 - Style Text Content with Bootstrap Typography Classes</a>
+ <a class="dropdown-item" href="recipe4">4 - Customize the Blockquote Element with CSS</a> 
+ <a class="dropdown-item" href="recipe5">5 - Extend Blockquote Styles with Sass</a>
+ <a class="dropdown-item" href="recipe6">6 - Align Text Around Images</a>
+ <a class="dropdown-item" href="recipe7">7 - Wrap Text Around Rounded Images</a>
+ <a class="dropdown-item" href="recipe8">8 - Style a Pricing Section using Bootstrap's Default Table Classes</a>
+ <a class="dropdown-item" href="recipe9">9 - Style a Pricing Section by Customizing Bootstrap's Table Classes</a>
+ </div>
+ </li>
+
+  <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+ </li>
+ </ul>
+ <!-- this form element will be used in Chapter 4 
+ <form class="form-inline my-2 my-lg-0">
+ <input class="form-control mr-sm-2" type="text" placeholder="Search">
+ <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+ </form>
+ -->
+ </div>
+ </nav>
+
+<div class="container mt-5">
+  <h1>Chapter 3, Recipe 9:</h1>
+    <p class="lead mb-5">Style a Pricing Section by Customizing Bootstrap's table Classes</p>
+	<div class="row"></div></div>
+
+
+    
+ <!-- Bootstrap core JavaScript
+ ================================================== -->
+ <!-- Placed at the end of the document so the pages load faster -->
+     <script src="js/jquery.js"></script>
+    <script src="js/tether.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://raw.githubusercontent.com/adobe-webplatform/css-shapes-polyfill/master/shapes-polyfill.min.js"></script>
+    <script>
+      $('#comment-3-like').on("click", function (e) {
+        e.preventDefault();
+        $('#custom-alert-3-like').hide().html('<div class="alert alert-success alert-dismissible fade show mt-3" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong>You have liked this comment!</strong></div>').fadeIn(800);
+      });
+      $('#comment-3-tweet').on("click", function (e) {
+        e.preventDefault();
+        $('#custom-alert-3-tweet').hide().html('<div class="alert alert-twitter alert-dismissible fade show mt-3" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong>You have tweeted this comment!</strong></div>').fadeIn(800);
+      });
+      $('#comment-3-add-to-fb').on("click", function (e) {
+        e.preventDefault();
+        $('#custom-alert-3-facebook').hide().html('<div class="alert alert-facebook alert-dismissible fade show mt-3" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong>You have shared this comment on Facebook!</strong></div>').fadeIn(800);
+      });
+    </script>
+
+
+
+ </body>
+</html>

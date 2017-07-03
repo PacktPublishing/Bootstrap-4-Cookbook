@@ -1,0 +1,8 @@
+{
+"version": 3,
+"mappings": "AAAA;;;;;;;EAOE",
+"sources": ["../main-03-04.scss"],
+"sourcesContent": ["/*\n.blockquote {\n  padding: ($spacer / 2) $spacer;\n  margin-bottom: $spacer;\n  font-size: $blockquote-font-size;\n  border-left: $blockquote-border-width solid $blockquote-border-color;\n}\n*/\n$blockquote-border-width: 10px;\n$blockquote-border-color: #ff0000;\n"],
+"names": [],
+"file": "main-03-04.css"
+}

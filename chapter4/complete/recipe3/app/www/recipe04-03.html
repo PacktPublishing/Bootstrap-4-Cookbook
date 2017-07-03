@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>
+        Recipe 04-03: Altering the Behavior of Popups using Tether Options
+    </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="">
+
+    <nav class="navbar navbar-toggleable-md navbar-dark bg-faded">
+ <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+ <span class="navbar-toggler-icon fa fa-bars"></span>
+ </button>
+ <a class="navbar-brand" href="index.html">Chapter 4</a>
+
+ <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+ <ul class="navbar-nav mr-auto">
+ <li class="nav-item active">
+
+ <li class="nav-item dropdown">
+ <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
+ <div class="dropdown-menu" aria-labelledby="dropdown01">
+ <a class="dropdown-item" href="recipe04-01">1 - Creating Custom Alerts and Positioning them in the Viewport</a>
+ <a class="dropdown-item" href="recipe04-02">2 - Making Full-page Modals</a>
+ <a class="dropdown-item" href="recipe04-03">3 - Altering the Behavior of Popups using Tether Options</a>
+ <a class="dropdown-item" href="recipe04-04">4 - Controlling the Color and Opacity of Tooltips using Sass Variables</a>
+ <a class="dropdown-item" href="recipe04-05">5 - Using Bootstrap's Sass Mixins to Create Custom Buttons</a>
+ <a class="dropdown-item" href="recipe04-06">6 - Adjusting the Rounding of corners on buttons and button groups</a> 
+ <a class="dropdown-item" href="recipe04-07">7 - Controlling the Number of Card Columns on Different Breakpoints with SCSS</a>
+ <a class="dropdown-item" href="recipe04-08">8 - Making Cards Responsive</a>
+ <a class="dropdown-item" href="recipe04-09">9 - Easily Positioning Inline Forms</a>
+ </div>
+ </ul>
+ </div>
+ </nav>
+
+        <div class="container">
+
+  <div class="mt-5">
+    <h1>Recipe 04-03: Altering the Behavior of Popups using Tether Options</h1>
+	<p><a href="https://v4-alpha.getbootstrap.com/components/popovers/" target="_blank">Link to bootstrap popovers docs</a></p>
+	
+</div><!-- /.container --> 
+
+<a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" data-container="body" title="Dismissible popover" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, temporibus fugiat modi quia provident aut? Labore, minus hic sapiente animi vero tempora odio fugit consectetur porro. Dolor fuga, consectetur facere aliquid veniam, distinctio nam perspiciatis explicabo quam ipsum obcaecati sequi nostrum tempora. Minima modi, dignissimos nam facilis eum cupiditate nisi?">
+		Dismissible popover
+</a>
+<h2 class="text-info mt-5 mb-5">Using tether options in JS to alter the behavior of popups</h2>
+
+<p>In this simple recipe, we will utilize the options provided by the tether library to alter the behavior of our popup.</p> 
+
+<p>The options we will alter will involve both using the html <code>data-*</code> attributes, as well as the JavaScript options as described in tether documentation, namely <a href="http://tether.io/#constraints">constraint options</a>, and <a href="http://tether.io/#offset">offset options</a>.
+
+</p><p>Looking at the html attributes, we can see that the options we can use include the title attribute, which gives card-like styling to the popover's heading (title).</p>
+
+<p>Looking at the JS options, we can inspect the code called on document ready:</p>
+<pre>
+<code>
+	$(function () {
+	  $('[data-toggle="popover"]').popover({
+		trigger: 'hover', // trigger: 'focus',
+		delay: { "show": 500, "hide": 100 },
+		attachment: 'top left',
+		targetAttachment: 'top right',
+		constraints: [
+			{
+				to: 'window',
+				pin: true
+			}
+		] 	// constraints
+	  }); // popover
+	}); // function
+</code>
+</pre>
+
+
+<p>The above code is pretty easy to ubderstand. Among other things, we can set the trigger for the popover, as well as the delay to show it and hide it based on the triggerable events.</p></div>
+
+	 <!-- Bootstrap core JavaScript
+ ================================================== -->
+ <!-- Placed at the end of the document so the pages load faster -->
+     <script src="js/jquery.js"></script>
+    <script src="js/tether.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
+	
+	<script>
+  $(function () {
+    $('[data-toggle="popover"]').popover({
+    trigger: 'hover',             // trigger: 'focus',
+    delay: { "show": 500, "hide": 100 },
+    attachment: 'top left',
+    targetAttachment: 'top right',
+    constraints: [
+      {
+        to: 'window',
+        pin: true
+      }
+    ]   // constraints
+    }); // popover
+  }); // function
+</script>
+
+
+
+</body>
+</html>

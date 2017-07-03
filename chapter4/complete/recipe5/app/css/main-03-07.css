@@ -1,0 +1,11 @@
+.wrap-text-around .circle-placed-right {
+  margin-left: 3rem;
+  -webkit-shape-outside: circle();
+  shape-outside: circle(); }
+
+.wrap-text-around .circle-placed-left {
+  margin-right: 3rem;
+  -webkit-shape-outside: circle();
+  shape-outside: circle(); }
+
+/*# sourceMappingURL=main-03-07.css.map */

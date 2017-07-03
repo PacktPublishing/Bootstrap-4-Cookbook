@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>
+        Recipe 04-01: Creating Custom Alerts and Positioning them in the Viewport
+    </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="">
+
+    <nav class="navbar navbar-toggleable-md navbar-dark bg-faded">
+ <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+ </button>
+ <a class="navbar-brand" href="index.html">Chapter 4</a>
+
+ <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+ <ul class="navbar-nav mr-auto">
+ <li class="nav-item active">
+
+ <li class="nav-item dropdown">
+ <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
+ <div class="dropdown-menu" aria-labelledby="dropdown01">
+ <a class="dropdown-item" href="recipe04-01">1 - Creating Custom Alerts and Positioning them in the Viewport</a>
+ <a class="dropdown-item" href="recipe04-02">2 - Making Full-page Modals</a>
+ <a class="dropdown-item" href="recipe04-03">3 - Altering the Behavior of Popups using Tether Options</a>
+ <a class="dropdown-item" href="recipe04-04">4 - Controlling the Color and Opacity of Tooltips using Sass Variables</a>
+ <a class="dropdown-item" href="recipe04-05">5 - Using Bootstrap's Sass Mixins to Create Custom Buttons</a>
+ <a class="dropdown-item" href="recipe04-06">6 - Adjusting the Rounding of corners on buttons and button groups</a> 
+ <a class="dropdown-item" href="recipe04-07">7 - Controlling the Number of Card Columns on Different Breakpoints with SCSS</a>
+ <a class="dropdown-item" href="recipe04-08">8 - Making Cards Responsive</a>
+ <a class="dropdown-item" href="recipe04-09">9 - Easily Positioning Inline Forms</a>
+ </div>
+ </ul>
+ </div>
+ </nav>
+
+        <div class="container">
+
+  <div class="mt-5">
+    <h1>Recipe 04-01: Creating Custom Alerts and Positioning them in the Viewport</h1>
+	<p><a href="https://v4-alpha.getbootstrap.com/components/alerts/" target="_blank">Link to bootstrap alerts docs</a></p>
+	
+</div><!-- /.container --> 
+
+<p class="lead">This is an example of alerts popping up in the top right corner, with a high z-index so that they appear above all the other elements on the page.</p>
+
+<p class="">There are 4 alerts that will show up in the top right corner.</p>
+
+<p>The first is a warning alert, the second is an info alert, the third is a sucess alert and the fourth is a danger alert.</p>
+
+<p>On all the alerts, the html attribute of <code>data-dismiss="alert"</code> is removed from the html.</p>
+
+<p>We are adding a custom class of <code>.alerts-top-right</code> on the alert container. We are also using the classes of <code>.col-12</code> and <code>.col-md-5</code>, so that on screens under the <code>md</code> breakpoint, the alert spans the full width of the viewport, minus the 50px padding (set in the <code>.alerts-top-right</code> class). Above the <code>md</code> breakpoint, the alert will take up 5 of 12 columns of the available screen space.</p>
+
+<p>To make the alerts behave the way we want, we are using custom jQuery.</p>
+
+<p>Looking at this recipes's jQuery code, we can see that we are setting delays on appearance of each of the alerts, followed by the .fadeIn() jQuery function. This is how the alerts get onto our screen.</p>
+
+<p>In order to remove them, since we are overriding the default Bootstrap behavior, we will target the <code>button.close</code>, of the specific alert, and apply various jQuery effects on them.</p>
+
+<p>The default Bootstrap behavior when using <code>data-dismiss="alert"</code> is that it removes the alert from the DOM. Since we are overriding this behavior, we must make sure that the element is removed, and we achieve that in our jQuery using this line of code: <code>$(this).remove();</code>. This way, we achieve the same end result as with the default Bootstrap alerts behaviour, so that the alert element in question is being removed from the DOM.</p>
+
+
+<div class="alerts-top-right col-12 col-md-5">
+	<div class="alert alert-warning alert-dismissible fade show" role="alert">
+	  <button type="button" class="close" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	  </button>
+	  <strong>Warning!</strong> Lorem ipsum dolor <a href="#" class="alert-link">sit amet</a>.
+	</div>
+
+	<div class="alert alert-info alert-dismissible fade show" role="alert">
+	  <button type="button" class="close" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	  </button>
+	  <strong>Info!</strong> Lorem ipsum dolor sit amet, <a href="#" class="alert-link"> consectetur adipisicing elit</a>.
+	</div>
+
+	<div class="alert alert-success alert-dismissible fade show" role="alert">
+	  <button type="button" class="close" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	  </button>
+	  <strong>Success!</strong> Ad, dignissimos consequuntur <a href="#" class="alert-link">accusantium officia</a>.
+	</div>
+
+	<div class="alert alert-danger alert-dismissible fade show" role="alert">
+	  <button type="button" class="close" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	  </button>
+	  <strong>Danger!</strong> Lorem ipsum dolor <a href="#" class="alert-link">sit amet</a>.
+	</div>
+
+
+</div></div>
+
+	 <!-- Bootstrap core JavaScript
+ ================================================== -->
+ <!-- Placed at the end of the document so the pages load faster -->
+     <script src="js/jquery.js"></script>
+    <script src="js/tether.js"></script>
+    <script src="js/bootstrap.js"></script>    
+	
+	<script>
+
+$(document).ready(function() {
+	$(".alert-warning").delay(1000).fadeIn(500);
+	$(".alert-info").delay(3000).fadeIn(500);
+	$(".alert-success").delay(4000).fadeIn(500);	
+	$(".alert-danger").delay(5500).fadeIn(500);
+});
+
+$(".alert-warning").on("click", "button.close", function() {
+    $(this).parent().hide('fast', function() {
+		$(this).remove();
+	});
+});
+
+$(".alert-info").on("click", "button.close", function() {
+    $(this).parent().hide('slow', function() {
+		$(this).remove();
+	});
+});
+
+$(".alert-success").on("click", "button.close", function() {
+    $(this).parent().animate({opacity: 0}, 1500).hide('fast', function() {
+		$(this).remove();
+	});
+});
+
+$(".alert-danger").on("click", "button.close", function() {
+    $(this).parent().slideUp('slow', function() {
+		$(this).remove();
+	});
+});
+</script>
+
+
+
+</body>
+</html>

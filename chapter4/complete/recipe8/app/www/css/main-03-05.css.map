@@ -1,0 +1,8 @@
+{
+"version": 3,
+"mappings": "AAAA;;;;;;;;;EASE;AAOF,WAAY;EACX,UAAU,EAPH,KAAK;EAQZ,kBAAkB,EAAE,yBAA8B;EAClD,eAAe,EAAE,yBAA8B;EAC/C,UAAU,EAAE,yBAA8B",
+"sources": ["../main-03-05.scss"],
+"sourcesContent": ["/*\nFROM _type.scss, line 110:\n\n.blockquote {\n  padding: ($spacer / 2) $spacer;\n  margin-bottom: $spacer;\n  font-size: $blockquote-font-size;\n  border-left: $blockquote-border-width solid $blockquote-border-color;\n}\n*/\n$white: white;\n// $white: darksalmon;\n$blockquote-border-width: 1rem;\n$blockquote-border-color: rgba(80, 134, 67, 0.35);\n$faded-green: rgba(80, 134, 67, 1);\n\n.blockquote {\n\tbackground: $white;\n\t-webkit-box-shadow: 0px 10px 5px -8px $faded-green;\n\t-moz-box-shadow: 0px 10px 5px -8px $faded-green;\n\tbox-shadow: 0px 10px 5px -8px $faded-green;\n}\n"],
+"names": [],
+"file": "main-03-05.css"
+}

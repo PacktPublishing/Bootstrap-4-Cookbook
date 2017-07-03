@@ -1,0 +1,14 @@
+// hide the .alert class so that it can be displayed with jQuery
+.alert {
+	display: none;
+}
+
+// position the div that holds all the alerts in the top-right corner of the window
+.alerts-top-right {
+	position: fixed;
+	z-index: 9999;
+	top: 20px;
+	right: 20px;
+	padding-left: 50px;
+	transition: all 0.5s ease;
+}

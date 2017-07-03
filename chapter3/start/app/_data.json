@@ -1,0 +1,29 @@
+{
+	"index": {
+		"title": "Welcome to Chapter 3"
+	},
+	"recipe1": {
+		"title": "Recipe 1: Extending the Text Classes of .display-* and Add Hover Effects with Hover.css"
+	},
+	"recipe2": {
+		"title": "Recipe 2: Creating Comment Sections Using Media Objects"
+	},
+	"recipe3": {
+		"title": "Recipe 3: Enriching Text Content with Bootstrap Typography Classes"
+	},
+	"recipe4": {
+		"title": "Recipe 4: Customizing the Blockquote Element with CSS"
+	},
+	"recipe5": {
+		"title": "Recipe 5: Extending the Blockquote Styles with Sass"
+	},
+	"recipe6": {
+		"title": "Recipe 6: Aligning Text Around Images"
+	},
+	"recipe7": {
+		"title": "Recipe 7: Wrapping Text Around Rounded Images"
+	},
+	"recipe8": {
+		"title": "Recipe 8: Styling a Pricing Section Using Bootstrap's Default Table Classes"
+	}
+}

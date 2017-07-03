@@ -1,0 +1,8 @@
+{
+"version": 3,
+"mappings": "AAAA,qBAAsB;EAClB,OAAO,EAAE,mBAAmB;EAC5B,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,eAAe;EACvB,QAAQ,EAAE,QAAQ;;AAGtB,iBAAkB;EACd,OAAO,EAAE,UAAU;EACnB,WAAW,EAAE,cAAc;EAC3B,SAAS,EAAE,KAAK;EAChB,OAAO,EAAE,GAAG;EACZ,WAAW,EAAE,IAAI;EACjB,QAAQ,EAAC,QAAQ;EACjB,GAAG,EAAC,KAAK;EACT,IAAI,EAAE,CAAC;;AAEX,gBAAiB;EACb,OAAO,EAAE,WAAW;EACpB,SAAS,EAAE,KAAK;EAChB,OAAO,EAAE,GAAG;EACZ,WAAW,EAAE,cAAc;EAC3B,WAAW,EAAE,IAAI;EACjB,QAAQ,EAAC,QAAQ;EACjB,MAAM,EAAC,QAAQ;EACf,KAAK,EAAE,CAAC",
+"sources": ["../main-03-04.scss"],
+"sourcesContent": ["blockquote.blockquote {\n    padding: 2rem 2rem 2rem 4rem;\n    margin: 2rem;\n    quotes: \"\\201C\" \"\\201D\";\n    position: relative;\n}\n\nblockquote:before { \n    content: open-quote;\n    font-family: Georgia, serif;\n    font-size: 12rem;\n    opacity: .04;\n    font-weight: bold;\n    position:absolute;\n    top:-6rem;\n    left: 0;\n} \nblockquote:after { \n    content: close-quote;\n    font-size: 12rem;\n    opacity: .04;\n    font-family: Georgia, serif;\n    font-weight: bold;\n    position:absolute;\n    bottom:-11.3rem;\n    right: 0;\n}\n\n\n"],
+"names": [],
+"file": "main-03-04.css"
+}

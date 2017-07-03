@@ -1,0 +1,47 @@
+<div class="container">
+
+  <div class="mt-5">
+    <h1><%- title %></h1>
+	<p><a href="https://v4-alpha.getbootstrap.com/components/popovers/" target="_blank">Link to bootstrap popovers docs</a></p>
+	
+</div><!-- /.container --> 
+
+<a tabindex="0" 
+	class="btn btn-lg btn-danger" 
+	role="button" data-toggle="popover" 
+	data-trigger="focus" 
+	data-container="body"
+	title="Dismissible popover" 
+	data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, temporibus fugiat modi quia provident aut? Labore, minus hic sapiente animi vero tempora odio fugit consectetur porro. Dolor fuga, consectetur facere aliquid veniam, distinctio nam perspiciatis explicabo quam ipsum obcaecati sequi nostrum tempora. Minima modi, dignissimos nam facilis eum cupiditate nisi?">
+		Dismissible popover
+</a>
+<h2 class="text-info mt-5 mb-5">Using tether options in JS to alter the behavior of popups</h2>
+
+<p>In this simple recipe, we will utilize the options provided by the tether library to alter the behavior of our popup.</p> 
+
+<p>The options we will alter will involve both using the html <code>data-*</code> attributes, as well as the JavaScript options as described in tether documentation, namely <a href="http://tether.io/#constraints">constraint options</a>, and <a href="http://tether.io/#offset">offset options</a>.
+
+<p>Looking at the html attributes, we can see that the options we can use include the title attribute, which gives card-like styling to the popover's heading (title).</p>
+
+<p>Looking at the JS options, we can inspect the code called on document ready:</p>
+<pre>
+<code>
+	$(function () {
+	  $('[data-toggle="popover"]').popover({
+		trigger: 'hover', // trigger: 'focus',
+		delay: { "show": 500, "hide": 100 },
+		attachment: 'top left',
+		targetAttachment: 'top right',
+		constraints: [
+			{
+				to: 'window',
+				pin: true
+			}
+		] 	// constraints
+	  }); // popover
+	}); // function
+</code>
+</pre>
+
+
+<p>The above code is pretty easy to ubderstand. Among other things, we can set the trigger for the popover, as well as the delay to show it and hide it based on the triggerable events.</p>

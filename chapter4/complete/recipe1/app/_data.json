@@ -1,0 +1,32 @@
+{
+	"index": {
+		"title": "Welcome to Chapter 4"
+	},
+	"recipe04-01": {
+		"title": "Recipe 04-01: Creating Custom Alerts and Positioning them in the Viewport"
+	},
+	"recipe04-02": {
+		"title": "Recipe 04-02: Making Full-page Modals"
+	},
+	"recipe04-03": {
+		"title": "Recipe 04-03: Altering the Behavior of Popups using Tether Options"
+	},
+	"recipe04-04": {
+		"title": "Recipe 04-04: Controlling the Color and Opacity of Tooltips using Sass Variables"
+	},
+	"recipe04-05": {
+		"title": "Recipe 04-05: Using Bootstrap's Sass Mixins to Create Custom Buttons"
+	},
+	"recipe04-06": {
+		"title": "Recipe 04-06: Adjusting the Rounding of Corners on Buttons and Button Groups"
+	},
+	"recipe04-07": {
+		"title": "Recipe 04-07: Controlling the Number of Card Columns on Different Breakpoints with SCSS"
+	},
+	"recipe04-08": {
+		"title": "Recipe 04-08: Making Cards Responsive"
+	},
+	"recipe04-09": {
+		"title": "Recipe 04-09: Easily Positioning Inline Forms"
+	}
+}
