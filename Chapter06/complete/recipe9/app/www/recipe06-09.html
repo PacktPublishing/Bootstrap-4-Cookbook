@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>
+        Recipe 06-09: Navigating Easily with simple-sidebar jQuery plugin
+    </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    
+</head>
+
+<body class="">
+    
+    <div id="navbar">
+  <!--
+  #navbar is positioned fixed.
+
+  It does not matter what kind of element #toggle-sidebar is.
+  -->
+  <div class="d-flex justify-content-center mt-5">
+    <h1 style="font-family: 'Pacifico', cursive; color: #8a9">Our Website Name</h1>
+  </div>
+  <div class="d-flex justify-content-center">
+    <button id="toggle-sidebar" class="btn btn-primary btn-large mt-5">MENU</button>
+  </div>
+</div>
+
+<div id="sidebar">
+  <!--
+  simpler-sidebar will handle #sidebar's position.
+
+  To let the content of your sidebar overflow, especially when you have a lot of content in it, you have to add a "wrapper" that wraps all content.
+
+  TIP: provide a background color.
+  -->
+  <div id="sidebar-wrapper" class="sidebar-wrapper">
+    <!--
+    Links below are just an example. Give each clickable element, for example links, a class to trigger the closing animation.
+    -->
+
+    <div class="col sidebar-offcanvas mt-5 pr-5" id="sidebar">
+      <div class="list-group">
+        <a href="#" class="list-group-item active">Link</a>
+        <a href="#" class="list-group-item">Link</a>
+        <a href="#" class="list-group-item">Link</a>
+        <a href="#" class="list-group-item">Link</a>
+        <a href="#" class="list-group-item">Link</a>
+        <a href="#" class="list-group-item">Link</a>
+        <a href="#" class="list-group-item">Link</a>
+        <a href="#" class="list-group-item">Link</a>
+        <a href="#" class="list-group-item">Link</a>
+        <a href="#" class="list-group-item">Link</a>
+      </div>
+    </div>
+  </div>
+</div>  <!-- CUSTOM NAVBAR INCLUDE -->
+
+        <div class="container">
+
+  <div class="mt-5">
+    <h1>Recipe 06-09: Navigating Easily with simple-sidebar jQuery plugin</h1>
+  <p><a href="https://v4-alpha.getbootstrap.com/components/navbar/" target="_blank">Link to bootstrap navbar docs</a></p>
+  
+</div><!-- /.container --> 
+
+<div class="col-12">
+
+<div>
+
+<div class="wrapper">
+
+<p class="h2">This recipe showcases the use of simpler-sidebar, integrated with Bootstrap 4.</p>
+
+<p>The code for the plugin is available at <a href="https://github.com/simple-sidebar/simpler-sidebar" target="_blank">https://github.com/simple-sidebar/simpler-sidebar</a>.</p>
+
+</div></div></div></div>
+
+	 <!-- Bootstrap core JavaScript
+ ================================================== -->
+ <!-- Placed at the end of the document so the pages load faster -->
+     <script src="js/jquery.js"></script>
+    <script src="js/tether.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>                  -->    
+    <!-- <script src="https://gitcdn.xyz/repo/sorich87/bootstrap-tour/master/build/js/bootstrap-tour.js"></script>           -->
+    <!-- <script src="https://gitcdn.xyz/repo/rodrigo-martins/bootstrap-select/master/dist/js/bootstrap-select.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>                      -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.0/rangeslider.js"></script>                  -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>                     -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootgrid/1.3.1/jquery.bootgrid.js"></script>             -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootgrid/1.3.1/jquery.bootgrid.fa.js"></script>          -->
+
+    <script src="https://gitcdn.xyz/repo/simple-sidebar/simpler-sidebar/master/dist/jquery.simpler-sidebar.js"></script>
+    
+    <!-- <script src="https://gitcdn.xyz/repo/jpillora/notifyjs/master/dist/notify.js"></script>                             -->
+    <!-- <script src="https://gitcdn.xyz/repo/joaopereirawd/animatedModal.js/master/animatedModal.js"></script>              -->
+    <!-- <script src="https://gitcdn.xyz/repo/esimakin/twbs-pagination/master/jquery.twbsPagination.js"></script>            -->
+    <!-- <script src="https://gitcdn.xyz/repo/flaviusmatis/simplePagination.js/master/jquery.simplePagination.js"></script>  -->  
+    <!-- <script src="https://gitcdn.xyz/repo/SergeIpatyev/svalidatejs/master/svd.js"></script>                              -->
+    <!-- <script src="https://gitcdn.xyz/repo/antennaio/jquery-bar-rating/master/dist/jquery.barrating.min.js"></script>     -->
+
+		
+	
+	
+		
+	
+	
+    
+    
+    <script>
+    $( document ).ready( function() {
+        $( "#sidebar" ).simplerSidebar( {
+            selectors: {
+                trigger: "#toggle-sidebar",
+                quitter: ".close-sidebar"
+            }
+        } );
+    } );
+</script>
+    
+    
+    
+    
+    
+
+</body>
+</html>

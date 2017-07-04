@@ -1,0 +1,30 @@
+// White links against a dark background
+.navbar-inverse {
+  .navbar-nav { 
+    .nav-link {
+      color: $navbar-inverse-active-color;
+    }
+  }
+  .navbar-toggler {
+    border-color: $navbar-inverse-toggler-bg;
+  }
+  .navbar-toggler-icon {
+    background-image: $navbar-inverse-active-color;
+  }
+}
+
+// Determine the position of the navbar collapse
+.navbar-toggleable {
+  @include media-breakpoint-up(sm) {
+    .navbar-nav {
+      .dropdown-menu {
+        position: static;
+        float: none;
+      }
+    }
+  }
+}
+
+nav.container {
+  width: 200px;
+}

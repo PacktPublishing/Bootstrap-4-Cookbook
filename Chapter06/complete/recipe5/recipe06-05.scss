@@ -1,0 +1,25 @@
+// The button-variant mixin takes 3 parameters (as follows):
+// @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+
+.btn-tomato {
+  @include button-variant(white, salmon, tomato);
+}
+.btn-green {
+  @include button-variant(white, #1CB51C, #0DA60D);
+}
+.btn-purple {
+  @include button-variant(white, #BA21ED, #AB12DE);
+}
+
+// The button-outline-variant mixin only takes one parameter, as follows:
+// @include button-outline-variant($color);
+
+.btn-outline-tomato {
+	@include button-outline-variant(salmon);
+}
+.btn-outline-green {
+	@include button-outline-variant(#1CB51C);
+}
+.btn-outline-purple {
+	@include button-outline-variant(#BA21ED);
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>
+        Recipe 06-01: Converting Checkboxes into Toggles with Bootstrap Toggle plugin
+    </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- <link href="https://gitcdn.xyz/repo/sorich87/bootstrap-tour/master/build/css/bootstrap-tour.css" rel="stylesheet"> -->
+    <!-- <link href="https://gitcdn.xyz/repo/rodrigo-martins/bootstrap-select/master/dist/css/bootstrap-select.css" rel="stylesheet"> -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" /> -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.0/rangeslider.css" rel="stylesheet" /> -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootgrid/1.3.1/jquery.bootgrid.css" rel="stylesheet" /> -->
+    <!-- <link rel="stylesheet" href="https://gitcdn.xyz/repo/jpillora/notifyjs/master/dist/styles/metro/notify-metro.css"> -->
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css"> -->
+    <link rel="stylesheet" href="https://gitcdn.xyz/repo/antennaio/jquery-bar-rating/master/dist/themes/fontawesome-stars.css">
+    
+</head>
+
+<body class="">
+    
+    <nav class="navbar navbar-toggleable-md navbar-dark bg-faded">
+ <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+ <span class="navbar-toggler-icon"></span>
+ </button>
+ <a class="navbar-brand" href="index.html">Chapter 6</a>
+
+ <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+ <ul class="navbar-nav mr-auto">
+ <li class="nav-item active">
+
+ <li class="nav-item dropdown">
+ <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
+ <div class="dropdown-menu" aria-labelledby="dropdown01">
+ <a class="dropdown-item" href="recipe06-01">1 - Converting Checkboxes into Toggles with Bootstrap Toggle plugin</a>
+ <a class="dropdown-item" href="recipe06-02">2 - Onboarding Users with Shepherd</a>
+ <a class="dropdown-item" href="recipe06-03">3 - Toggling Visibility of Password Fields with Custom jQuery Code</a>
+ <a class="dropdown-item" href="recipe06-04">4 - Extending Functionality of Select Elements with Bootstrap Select plugin</a>
+ <a class="dropdown-item" href="recipe06-05">5 - Customizing Select Boxes with Select2 plugin</a>
+ <a class="dropdown-item" href="recipe06-06">6 - Adding Input Sliders with Rangeslider.js</a> 
+ <a class="dropdown-item" href="recipe06-07">7 - Easily Add Dates to Your Inputs with jQuery UI Datepicker</a>
+ <a class="dropdown-item" href="recipe06-08">8 - Converting Plain Tables into Sophisticated Data Tables with Bootgrid</a>
+ <a class="dropdown-item" href="recipe06-09">9 - Navigating Easily with simple-sidebar jQuery plugin</a>
+ <a class="dropdown-item" href="recipe06-10">10 - Add Fully Customizable Notifications with Notifyjs</a>
+ <a class="dropdown-item" href="recipe06-11">11 - Integrating a Fancy Modal using animatedModal.js</a>
+ <a class="dropdown-item" href="recipe06-12">12 - Making Pagination Dynamic with the jQuery Pagination Plugin and simplePagination.js</a>
+ <a class="dropdown-item" href="recipe06-13">13 - Validating Forms with svalidatejs</a>
+ <a class="dropdown-item" href="recipe06-14">14 - Adding a Rating System Using jQuery Bar Rating Plugin</a>
+ </div>
+ </li>
+  <a class="nav-link" href="about">About</a>
+ </li>
+ </ul>
+ </div>
+ </nav>
+
+        <div class="container">
+
+  <div class="mt-5">
+    <h1>Recipe 06-01: Converting Checkboxes into Toggles with Bootstrap Toggle plugin</h1>
+	<p><a href="https://v4-alpha.getbootstrap.com/components/forms/#checkboxes-and-radios" target="_blank">Link to bootstrap docs on checkboxes and radios</a></p>
+	
+</div><!-- /.container --> 
+
+<div class="col-12 col-md-5">
+
+<div class="checkbox">
+  <label>
+    <input type="checkbox" data-toggle="toggle" checkedx>
+    Option one is enabled
+  </label>
+</div>
+<div class="checkbox disabled">
+  <label>
+    <input type="checkbox" disabled="disabled" data-toggle="toggle">
+    Option two is disabled
+  </label>
+</div>
+
+</div></div>
+
+	 <!-- Bootstrap core JavaScript
+ ================================================== -->
+ <!-- Placed at the end of the document so the pages load faster -->
+     <script src="js/jquery.js"></script>
+    <script src="js/tether.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>   
+    <!-- <script src="https://gitcdn.xyz/repo/sorich87/bootstrap-tour/master/build/js/bootstrap-tour.js"></script>           -->
+    <!-- <script src="https://gitcdn.xyz/repo/rodrigo-martins/bootstrap-select/master/dist/js/bootstrap-select.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>                      -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.0/rangeslider.js"></script>                  -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>                     -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootgrid/1.3.1/jquery.bootgrid.js"></script>             -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootgrid/1.3.1/jquery.bootgrid.fa.js"></script>          -->
+
+    <!-- <script src="https://gitcdn.xyz/repo/corneliucirlan/mdstrap/gh-pages/dist/js/jquery-mdstrap.js"></script>           -->
+    <!-- <script src="https://gitcdn.xyz/repo/corneliucirlan/mdstrap/gh-pages/dist/js/jquery-mdstrap.js"></script>           -->
+    <!-- <script src="https://gitcdn.xyz/repo/jpillora/notifyjs/master/dist/notify.js"></script>                             -->
+    <!-- <script src="https://gitcdn.xyz/repo/joaopereirawd/animatedModal.js/master/animatedModal.js"></script>              -->
+    <!-- <script src="https://gitcdn.xyz/repo/esimakin/twbs-pagination/master/jquery.twbsPagination.js"></script>            -->
+    <!-- <script src="https://gitcdn.xyz/repo/flaviusmatis/simplePagination.js/master/jquery.simplePagination.js"></script>  -->  
+    <!-- <script src="https://gitcdn.xyz/repo/SergeIpatyev/svalidatejs/master/svd.js"></script>                              -->
+    <!-- <script src="https://gitcdn.xyz/repo/antennaio/jquery-bar-rating/master/dist/jquery.barrating.min.js"></script>     -->
+
+	<script>
+
+
+</script>
+
+	
+	
+	
+		
+	
+	
+    
+    
+    
+    
+    
+    
+    
+    
+
+</body>
+</html>

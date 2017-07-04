@@ -1,0 +1,40 @@
+<script>
+
+var tour;
+
+tour = new Shepherd.Tour({
+  defaults: {
+    classes: 'shepherd-theme-arrows',
+    scrollTo: true
+  }
+});
+
+tour.addStep('example-step', {
+  title: 'Whatever',
+  text: 'This step is attached to the bottom of the <code>.my-element</code> element.',
+  attachTo: '.my-element bottom',
+  classes: 'example-step-extra-class',
+  buttons: [
+    {
+      text: 'Next',
+      action: tour.next
+    }
+  ]
+});
+
+tour.addStep('example-step-2', {
+  title: 'Whatever 2',
+  text: 'This is step 2',
+  attachTo: '#my-other-element bottom',
+  classes: 'example-step-extra-class',
+  buttons: [
+    {
+      text: 'Close',
+      action: tour.hide
+    }
+  ]
+});
+
+tour.start()
+
+</script>

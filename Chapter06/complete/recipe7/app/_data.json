@@ -1,0 +1,48 @@
+{
+	"index": {
+		"title": "Welcome to Chapter 6"
+	},
+	"recipe06-01": {
+		"title": "Recipe 06-01: Converting Checkboxes into Toggles with Bootstrap Toggle plugin"
+	},
+	"recipe06-02": {
+		"title": "Recipe 06-02: Onboarding Users with Shepherd"
+	},
+	"recipe06-03": {
+		"title": "Recipe 06-03: Toggling Visibility of Password Fields with Custom jQuery Code"
+	},
+	"recipe06-04": {
+		"title": "Recipe 06-04: Extending Functionality of Select Elements with Bootstrap Select plugin"
+	},
+	"recipe06-05": {
+		"title": "Recipe 06-05: Customizing Select Boxes with Select2 plugin"
+	},
+	"recipe06-06": {
+		"title": "Recipe 06-06: Adding Input Sliders with Rangeslider.js"
+	},
+	"recipe06-07": {
+		"title": "Recipe 06-07: Easily Add Dates to Your Inputs with jQuery UI Datepicker"
+	},
+	"recipe06-08": {
+		"title": "Recipe 06-08: Converting Plain Tables into Sophisticated Data Tables with Bootgrid"
+	},
+	"recipe06-09": {
+		"title": "Recipe 06-09: Navigating Easily with simple-sidebar jQuery plugin",
+		"layout": "_layout06-09"
+	},
+	"recipe06-10": {
+		"title": "Recipe 06-10: Adding Fully Customizable Notifications with Notify.js"
+	},
+	"recipe06-11": {
+		"title": "Recipe 06-11: Integrating a Fancy Modal using animatedModal.js"
+	},
+	"recipe06-12": {
+		"title": "Recipe 06-12: Making Pagination Dynamic with the jQuery Pagination Plugin and simplePagination.js"
+	},
+	"recipe06-13": {
+		"title": "Recipe 06-13: Validating Forms with svalidate.js"
+	},
+	"recipe06-14": {
+		"title": "Recipe 06-14: Adding a Rating System Using jQuery Bar Rating Plugin"
+	}
+}

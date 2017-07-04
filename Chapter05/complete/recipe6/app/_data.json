@@ -1,0 +1,29 @@
+{
+	"index": {
+		"title": "Welcome to Chapter 5"
+	},
+	"recipe05-01": {
+		"title": "Recipe 05-01: Adding Font Awesome to bootstrap navbar"
+	},
+	"recipe05-02": {
+		"title": "Recipe 05-02: Placing a single Bootstrap navbar dropdown to the right"
+	},
+	"recipe05-03": {
+		"title": "Recipe 05-03: Centering navbar links"
+	},
+	"recipe05-04": {
+		"title": "Recipe 05-04: Making a transparent navbar on a darker background"
+	},
+	"recipe05-05": {
+		"title": "Recipe 05-05: Creating a navbar with icons and flexbox"
+	},
+	"recipe05-06": {
+		"title": "Recipe 05-06: Adding another row of links to the navbar"
+	},
+	"recipe05-07": {
+		"title": "Recipe 05-07: Adding Yamm3 Megamenu list of links to a navbar dropdown"
+	},
+	"recipe05-08": {
+		"title": "Recipe 05-08: Adding Yamm3 Megamenu images to a navbar dropdown"
+	}
+}

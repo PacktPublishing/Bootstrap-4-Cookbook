@@ -1,0 +1,22 @@
+<div class="container">
+
+  <div class="mt-5">
+    <h1><%- title %></h1>
+	<p><a href="https://v4-alpha.getbootstrap.com/components/navbar/" target="_blank">Link to bootstrap navbar docs</a></p>
+
+</div><!-- /.container --> 
+
+
+<p>We are using a customized version of the navbar used on the official bootstrap 4 website.</p>
+
+<p>The navbar is somewhat similar to the one used in the previous recipe.</p>
+
+<p>To achieve the navbar as it is in this recipe, we are using the usual div with classes <code>.navbar-collapse.collapse</code>.</p>
+
+<p>Inside of that div, we are using two <code>ul</code> elements. The first <code>ul</code> element is styled using the classes of <code>.nav.navbar-nav</code> and <code>.mr-auto</code>.</p>
+
+<p>That third class, <code>.mr-auto</code>, is the key here. This class will increase the right margin on the <code>ul</code> element to stretch so that it pushes the next <code>ul</code> all the way to the right edge of the navbar.</p>
+
+<p>This raises another issue, which is, since the second <code>ul</code> element holds the dropdown items, clicking the "Recipes" dropdown will display the items in the dropdown with the right-side cut-off.</p>
+
+<p>Therefore, we need to re-align the dropdown bubble, and we achieve it by using the class of <code>.dropdown-menu-right</code>.</p>

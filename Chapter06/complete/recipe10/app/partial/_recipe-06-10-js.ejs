@@ -1,0 +1,28 @@
+<script>
+
+    $.notify.addStyle('bs4success', {
+      html: '<div><span class="fa fa-spinner fa-spin fa-2x"></span> <span data-notify-text/></div>',
+      classes: {
+        base: {
+          "background-color": "#dff0db",
+          "border-color": "#d0e9c6",
+          "color": "#3c763d",
+          "padding": ".75rem 1.25rem",
+          "margin-bottom": "1rem",
+          "border": "1px solid transparent",
+          "border-radius": ".25rem"
+        },
+      }
+    });
+
+    // Basic Example
+    $.notify(
+      " Click to hide or wait 20 seconds...", 
+      { 
+        autoHideDelay: 20000,
+        clickToHide: true,
+        style: 'bs4success'
+      }
+    );
+
+</script>

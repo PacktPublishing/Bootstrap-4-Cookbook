@@ -1,0 +1,20 @@
+.shepherd-content {
+    background: whitesmoke;
+    padding: 2rem;
+
+    -webkit-box-shadow: 10px 10px 66px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 66px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 66px 0px rgba(0,0,0,0.75);
+}
+
+ul.shepherd-buttons {
+    padding-left: 0;
+}  
+ul.shepherd-buttons li {
+    list-style-type: none; 
+}
+ul.shepherd-buttons li a {
+    border: 1px solid black;
+    padding: .5rem .6rem;
+    cursor: pointer;
+}

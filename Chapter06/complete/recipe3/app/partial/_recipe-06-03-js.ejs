@@ -1,0 +1,16 @@
+<script>
+var $addonButton = $("#basic-addon");
+var $passwordField = $("#exampleInputPassword");
+$addonButton.on("click", function() {
+    $passwordField.attr("type", function() {
+      $("#lock-icon-toggle").attr("class") === 'fa fa-unlock-alt' ? 
+      $passwordField.attr("type", "password") : 
+      $passwordField.attr("type", "text")
+    });
+    $("#lock-icon-toggle").attr("class") === "fa fa-lock" ? 
+    $("#lock-icon-toggle").attr("class", "fa fa-unlock-alt")
+      .parent().attr("class", "btn btn-success") : 
+    $("#lock-icon-toggle").attr("class", "fa fa-lock")
+      .parent().attr("class", "btn btn-danger");
+});
+</script>

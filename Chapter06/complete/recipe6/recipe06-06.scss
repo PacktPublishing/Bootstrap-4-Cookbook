@@ -1,0 +1,16 @@
+.wrapper .rangeslider__handle:after {
+  display: none;
+}
+
+.wrapper .rangeslider__handle {
+  background: #d9edf7;
+  border: 4px solid rgba(123, 167, 190, 0.3);
+  background-image: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.wrapper .rangeslider__fill {
+  background: #bcdff1;
+}
