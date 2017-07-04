@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>
+        Welcome to Chapter 7
+    </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+    
+</head>
+
+<body class="">
+    
+    <nav class="navbar navbar-toggleable-md navbar-dark bg-faded">
+ <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+ <span class="navbar-toggler-icon"></span>
+ </button>
+ <a class="navbar-brand" href="index.html">Chapter 7</a>
+
+ <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+ <ul class="navbar-nav mr-auto">
+ <li class="nav-item active">
+
+ <li class="nav-item dropdown">
+ <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
+ <div class="dropdown-menu" aria-labelledby="dropdown01">
+ <a class="dropdown-item" href="recipe07-01">1 - Making the Simplest Possible jQuery Plugin</a>
+ <a class="dropdown-item" href="recipe07-02">2 - Creating a More Complex Plugin by Using the extend() Method</a>
+ <a class="dropdown-item" href="recipe07-03">3 - Creating a Plugin and Using it with Bootstrap 4</a>
+ </div>
+ </li>
+  
+ </li>
+ </ul>
+
+ </div>
+ </nav>
+
+        <div class="container">
+
+  <div class="mt-5">
+    <h1>Welcome to Chapter 7</h1>
+	
+	<div class="mt-2 text-justify">This webpage contains the recipes from the 7th chapter of <a href="#" class="bg-faded">Bootstrap 4 Cookbook</a>:
+	    <ul class="mt-2">
+	    	<li>Author: <a href="#" class="bg-faded">Ajdin Imsirovic</a></li>
+	    	<li>Technical Reviewer: <a href="#" class="bg-faded">Zlatko Alomerovic</a></li>
+	    	<li>Publisher: <a href="#" class="bg-faded">Packt Publishing</a></li>
+	    </ul>
+    </div>
+
+</div><!-- /.container --></div>
+
+	 <!-- Bootstrap core JavaScript
+ ================================================== -->
+ <!-- Placed at the end of the document so the pages load faster -->
+     <script src="js/jquery.js"></script>
+    <script src="js/tether.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+		
+	
+    <script>
+    // plugin definition
+
+    (function ($) {
+        $.fn.classToggler = function (oldClass, newClass) {
+                return this.each(function(i, elem) {
+                  var $currentIndex = $(elem);
+
+                  $currentIndex.toggleClass(oldClass + " " + newClass);             
+                });
+      };
+    })(jQuery);
+
+    // calling the plugin
+    $('#switchNavbar').click(function() {
+      $('.navbar')
+        .classToggler("bg-faded", "bg-success")
+        .classToggler("navbar-dark", "navbar-inverse");
+    });
+</script>
+
+</body>
+</html>

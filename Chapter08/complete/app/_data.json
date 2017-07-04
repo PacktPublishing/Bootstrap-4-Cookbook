@@ -1,0 +1,26 @@
+{
+	"index": {
+		"title": "Welcome to Chapter 8"
+	},
+	"recipe1": {
+		"title": "Recipe 08-01: Breakpoint-dependent Switching of Flex Direction on Card Components"
+	},
+	"recipe2": {
+		"title": "Recipe 08-02: Letting Cards Take Up Space with the .flex-wrap and .col Classes"
+	},
+	"recipe3": {
+		"title": "Recipe 08-03: Adding Any Number of Columns with Flexbox"
+	},
+	"recipe4": {
+		"title": "Recipe 08-04: Combining Numbered .col Classes with Plain .col Classes"
+	},
+	"recipe5": {
+		"title": "Recipe 08-05: Working with Card Layouts and the Flexbox Grid"
+	},
+	"recipe6": {
+		"title": "Recipe 08-06: Center-Aligning Cards on Wider Viewports Only"
+	},
+	"recipe7": {
+		"title": "Recipe 7: Positioning Nav-tabs with Flexbox"
+	}
+}

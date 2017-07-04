@@ -1,0 +1,23 @@
+<footer class="footer bg-info ">
+  <div class="container text-white">
+
+    <div class="row">
+      <div class="col">
+        <a href="mailto:{{ site.email }}"><span class="fa fa-envelope"></span> {{ site.email }}</a>
+      </div>
+      <div class="col">
+        {% if site.github_username %}
+        <p>GitHub: <a href="https://github.com/{{ site.github_username }}">{{ site.github_username }}</a></p>
+        {% endif %}
+      </div>
+      <div class="col">
+        {% if site.twitter_username %}
+        <p>Twitter: @<a href="https://twitter.com/{{ site.twitter_username }}">{{ site.twitter_username }}</a></p>
+        {% endif %}
+      </div>
+
+      </div>
+    </div>
+  </div>
+  <p class="text-center text-white p-4">(c) {{ site.title }}, 2017</p>
+</footer>

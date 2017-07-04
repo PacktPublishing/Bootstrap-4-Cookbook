@@ -1,0 +1,40 @@
+<div class="container">
+
+<h2 class="mt-5 pb-3">Recipe 08-05: Working with Card Layouts and the Flexbox Grid</h2>
+
+<p class="mt-4">In this recipe we will look at two ways of using card components with the flexbox grid.</p>
+
+<p class="mt-4">In the first example (the first three cards on a gray background), we will take a more traditional approach of adding several <code>col-*</code> classes to control the layout of elements on the page.</p>
+
+<p class="mt-4 mb-5">In the second example, we will wrap all the cards in a div with just a simple <code>col</code> class. Then we will set the min-width on the <code>col</code> class to prevent it from getting too narrow. After that, flexbox will take care of controlling the layout of elements on the page.</p>
+
+
+</div><!-- /.container -->
+
+<style>
+
+.card img {
+  max-height: 300px;
+  
+  /* object-fit: contain; */
+  object-fit: cover;
+  object-position: 35% 25%;
+  
+  /* http://caniuse.com/#search=object-fit */
+  /* https://css-tricks.com/almanac/properties/o/object-position/ */
+}
+
+.col {
+  min-width: 282px;
+}
+
+.card-white {
+  background-color: white !important;
+}
+
+
+</style>
+
+<%- partial("partial/_the-first-container") %>
+
+<%- partial("partial/_the-second-container") %>

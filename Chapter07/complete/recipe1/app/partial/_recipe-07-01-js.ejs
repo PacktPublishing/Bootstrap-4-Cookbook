@@ -1,0 +1,11 @@
+<script>
+// the actual plugin
+ (function() {
+ $.fn.canYouFindIt = function() {
+ return this.css("background-color", "gold");
+ };
+ })(jQuery);
+
+ // calling the plugin
+ $('body').canYouFindIt();
+</script>

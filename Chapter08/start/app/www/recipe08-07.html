@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>
+        My default title
+    </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-faded-green">
+
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+ <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+ <span class="navbar-toggler-icon"></span>
+ </button>
+ <a class="navbar-brand" href="index.html">Chapter 8</a>
+
+ <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+ <ul class="navbar-nav mr-auto">
+ <li class="nav-item active">
+
+ <li class="nav-item dropdown">
+ <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
+ <div class="dropdown-menu" aria-labelledby="dropdown01">
+ <a class="dropdown-item" href="recipe08-01">1 - Breakpoint-dependent Switching of Flex Direction on Card Components</a>
+ <a class="dropdown-item" href="recipe08-02">2 - Letting Cards Take Up Space with the <code>.flex-wrap</code> and <code>.col</code> Classes</a>
+ <a class="dropdown-item" href="recipe08-03">3 - Adding Any Number of Columnns with Flexbox (Not Only 12!)</a>
+ <a class="dropdown-item" href="recipe08-04">4 - Combining Numbered <code>.col</code> Classes with Plain <code>.col</code> Clsses</a> 
+ <a class="dropdown-item" href="recipe08-05">5 - Working with Card Layouts and the Flexbox Grid</a>
+ <a class="dropdown-item" href="recipe08-06">6 - Center-Aligning Cards on Wider Viewports Only</a>
+ <a class="dropdown-item" href="recipe08-07">7 - Positioning Nav-tabs with Flexbox</a>
+ </div>
+ </li>
+  <a class="nav-link" href="about">About</a>
+ </li>
+ </ul>
+ 
+ </div>
+ </nav>
+
+        <!-- _0807-01-recipe intro -->
+<div class="container">
+
+<h2 class="mt-5 pb-3">Recipe 08-07: Positioning Nav-tabs with Flexbox</h2>
+
+<p class="mt-4">In this recipe we will look at positioning nav-tabs with flexbox.</p>
+
+<p class="mt-4">We will also utilize several partials to create a complex nav-tabs menu.</p>
+
+</div>
+<!-- _0807-02-style-tag -->
+<style>
+.card img {
+  object-fit: cover;
+}
+.nav-tabs .nav-link {
+  border-top-right-radius: .5rem;
+  border-top-left-radius: .5rem;
+}
+#wrapper-for-tab-content {
+  min-height: 1200px;
+}
+</style>
+<!-- 0807-03-nav-tabs-menu -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <ul class="nav nav-tabs justify-content-start justify-content-sm-center justify-content-md-end justify-content-lg-between justify-content-xl-around" role="tablist">
+        
+        <!-- first tab link -->
+        <li class="nav-item">
+          <a class="nav-link active" href="#first" id="the-first-tab" role="tab" data-toggle="tab" aria-controls="First" aria-expanded="true">First</a>
+        </li>
+
+        <!-- second tab link -->
+        <li class="nav-item">
+          <a class="nav-link" href="#second" role="tab" id="the-second-tab" data-toggle="tab" aria-controls="Second">Second</a>
+        </li>
+
+        <!-- third tab link -->
+        <li class="nav-item">
+          <a class="nav-link" href="#third" role="tab" id="the-third-tab" data-toggle="tab" aria-controls="Third">Third</a>
+        </li>
+
+        <!-- fourth tab link (dropdown) -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Fourth</a>
+          
+          <div class="dropdown-menu">
+
+            <!-- the first dropdown link -->
+            <a class="dropdown-item" href="#fourth-a-dropdown" role="tab" id="the-fourth-a-tab" data-toggle="tab" aria-controls="Fourth A">Fourth A</a>
+
+            <!-- the second dropdown link -->
+            <a class="dropdown-item" href="#fourth-b-dropdown" role="tab" id="the-fourth-b-tab" data-toggle="tab" aria-controls="Fourth B">Fourth B</a>
+
+            <!-- the third dropdown link -->
+            <a class="dropdown-item" href="#fourth-c-dropdown" role="tab" id="the-fourth-c-tab" data-toggle="tab" aria-controls="Fourth C">Fourth C</a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- _0807-04-the-actual-tabs-content -->
+<div class="container p-5" id="wrapper-for-tab-content">
+  <div class="tab-content">
+
+    <!-- first tab content -->
+    <div role="tabpanel" class="tab-pane fade show active" id="first" aria-labelledby="the-first-tab">
+      <h2>First Tab Content</h2>
+      <div class="container">
+  <div class="row align-content-center">
+      <div class="col col-md-6 col-xl-4 mt-3 mb-4">
+  <div class="card">
+    <img class="card-img-top" src="http://lorempixel.com/400/320/city/">
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title.</p>
+      <a href="#" class="btn btn-primary btn-block mt-auto">Go somewhere</a>
+    </div>
+  </div>
+</div>
+      <div class="col col-md-6 col-xl-4 mt-3 mb-4">
+  <div class="card">
+    <img class="card-img-top" src="http://lorempixel.com/400/320/city/">
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title.</p>
+      <a href="#" class="btn btn-primary btn-block mt-auto">Go somewhere</a>
+    </div>
+  </div>
+</div>
+      <div class="col col-md-6 col-xl-4 mt-3 mb-4">
+  <div class="card">
+    <img class="card-img-top" src="http://lorempixel.com/400/320/city/">
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title.</p>
+      <a href="#" class="btn btn-primary btn-block mt-auto">Go somewhere</a>
+    </div>
+  </div>
+</div>
+      <div class="col col-md-6 col-xl-4 mt-3 mb-4">
+  <div class="card">
+    <img class="card-img-top" src="http://lorempixel.com/400/320/city/">
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title.</p>
+      <a href="#" class="btn btn-primary btn-block mt-auto">Go somewhere</a>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+    </div>
+
+    <!-- second tab content -->
+    <div role="tabpanel" class="tab-pane fade" id="second" aria-labelledby="the-second-tab">
+      <h2>Second Tab Content</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, aperiam.</p>
+    </div>
+
+    <!-- third tab content -->
+    <div role="tabpanel" class="tab-pane fade" id="third" aria-labelledby="the-third-tab">
+      <h2>Third Tab Content</h2>
+      <div class="container">
+  <div class="row align-content-center">
+      <div class="col col-md-6 col-xl-4 mt-3 mb-4">
+  <div class="card">
+    <img class="card-img-top" src="http://lorempixel.com/400/320/city/">
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title.</p>
+      <a href="#" class="btn btn-primary btn-block mt-auto">Go somewhere</a>
+    </div>
+  </div>
+</div>
+      <div class="col col-md-6 col-xl-4 mt-3 mb-4">
+  <div class="card">
+    <img class="card-img-top" src="http://lorempixel.com/400/320/city/">
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title.</p>
+      <a href="#" class="btn btn-primary btn-block mt-auto">Go somewhere</a>
+    </div>
+  </div>
+</div>
+      <div class="col col-md-6 col-xl-4 mt-3 mb-4">
+  <div class="card">
+    <img class="card-img-top" src="http://lorempixel.com/400/320/city/">
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title.</p>
+      <a href="#" class="btn btn-primary btn-block mt-auto">Go somewhere</a>
+    </div>
+  </div>
+</div>
+      <div class="col col-md-6 col-xl-4 mt-3 mb-4">
+  <div class="card">
+    <img class="card-img-top" src="http://lorempixel.com/400/320/city/">
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title.</p>
+      <a href="#" class="btn btn-primary btn-block mt-auto">Go somewhere</a>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+    </div>
+
+    <!-- fourth tab, first dropdown content -->
+    <div role="tabpanel" class="tab-pane fade" id="fourth-a-dropdown" aria-labelledby="the-fourth-a-tab">
+      <h2>Fourth Tab, First Dropdown Content</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, aperiam.</p>
+    </div>
+
+    <!-- fourth tab, second dropdown content -->
+    <div role="tabpanel" class="tab-pane fade" id="fourth-b-dropdown" aria-labelledby="the-fourth-b-tab">
+      <h2 class="bg-success text-white">Fourth Tab, Second Dropdown Content</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, aperiam.</p>
+    </div>
+
+    <!-- fourth tab, third dropdown content -->
+    <div role="tabpanel" class="tab-pane fade" id="fourth-c-dropdown" aria-labelledby="the-fourth-c-tab">
+      <h2>Fourth Tab, Third Dropdown Content</h2>
+      <p class="bg-danger text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, aperiam.</p>
+    </div>
+
+  </div>
+</div>
+
+	 <!-- Bootstrap core JavaScript
+ ================================================== -->
+ <!-- Placed at the end of the document so the pages load faster -->
+     <script src="js/jquery.js"></script>
+    <script src="js/tether.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    
+  
+  
+  
+  
+  
+
+</body>
+</html>

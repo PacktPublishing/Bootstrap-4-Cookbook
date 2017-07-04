@@ -1,0 +1,18 @@
+// $white:  lightskyblue;
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute !important;
+  width: 100%;
+  bottom: 0;
+
+  p {
+    margin-bottom: 0;
+  }
+}

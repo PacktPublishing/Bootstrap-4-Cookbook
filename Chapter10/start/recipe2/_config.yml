@@ -1,0 +1,6 @@
+# Assets 
+#
+# Enable the use of @imports in Jekyll:
+sass:
+  sass_dir:   assets/scss
+  style:      :nested

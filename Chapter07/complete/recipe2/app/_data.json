@@ -1,0 +1,14 @@
+{
+	"index": {
+		"title": "Welcome to Chapter 7"
+	},
+	"recipe07-01": {
+		"title": "Recipe 07-01: Making the Simplest Possible jQuery Plugin"
+	},
+	"recipe07-02": {
+		"title": "Recipe 07-02: Creating a More Complex Plugin Using the extend() Method"
+	},
+  "recipe07-03": {
+    "title": "Recipe 07-03: Creating a Plugin and Using it with Bootstrap 4"
+  }
+}

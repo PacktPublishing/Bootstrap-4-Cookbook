@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>
+        My default title
+    </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-faded-green">
+
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+ <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+ <span class="navbar-toggler-icon"></span>
+ </button>
+ <a class="navbar-brand" href="index.html">Chapter 8</a>
+
+ <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+ <ul class="navbar-nav mr-auto">
+ <li class="nav-item active">
+
+ <li class="nav-item dropdown">
+ <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
+ <div class="dropdown-menu" aria-labelledby="dropdown01">
+ <a class="dropdown-item" href="recipe08-01">1 - Breakpoint-dependent Switching of Flex Direction on Card Components</a>
+ <a class="dropdown-item" href="recipe08-02">2 - Letting Cards Take Up Space with the <code>.flex-wrap</code> and <code>.col</code> Classes</a>
+ <a class="dropdown-item" href="recipe08-03">3 - Adding Any Number of Columnns with Flexbox (Not Only 12!)</a>
+ <a class="dropdown-item" href="recipe08-04">4 - Combining Numbered <code>.col</code> Classes with Plain <code>.col</code> Clsses</a> 
+ <a class="dropdown-item" href="recipe08-05">5 - Working with Card Layouts and the Flexbox Grid</a>
+ <a class="dropdown-item" href="recipe08-06">6 - Center-Aligning Cards on Wider Viewports Only</a>
+ <a class="dropdown-item" href="recipe08-07">7 - Positioning Nav-tabs with Flexbox</a>
+ </div>
+ </li>
+  <a class="nav-link" href="about">About</a>
+ </li>
+ </ul>
+ 
+ </div>
+ </nav>
+
+        <div class="container">
+
+<h2 class="mt-5 pb-3">Recipe 08-05: Working with Card Layouts and the Flexbox Grid</h2>
+
+<p class="mt-4">In this recipe we will look at two ways of using card components with the flexbox grid.</p>
+
+<p class="mt-4">In the first example (the first three cards on a gray background), we will take a more traditional approach of adding several <code>col-*</code> classes to control the layout of elements on the page.</p>
+
+<p class="mt-4 mb-5">In the second example, we will wrap all the cards in a div with just a simple <code>col</code> class. Then we will set the min-width on the <code>col</code> class to prevent it from getting too narrow. After that, flexbox will take care of controlling the layout of elements on the page.</p>
+
+
+</div><!-- /.container -->
+
+<style>
+
+.card img {
+  max-height: 300px;
+  
+  /* object-fit: contain; */
+  object-fit: cover;
+  object-position: 35% 25%;
+  
+  /* http://caniuse.com/#search=object-fit */
+  /* https://css-tricks.com/almanac/properties/o/object-position/ */
+}
+
+.col {
+  min-width: 282px;
+}
+
+.card-white {
+  background-color: white !important;
+}
+
+
+</style>
+
+
+<div class="container-fluid bg-faded pt-5 pb-5">
+  <div class="container">
+    <h2 class="h3 text-center">With "old-school" <code>col-*</code> classes:</h2>
+
+    <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4 mt-3 mb-3">
+            <div class="card card-outline-success card-white">
+              <img class="card-img-top img-responsive" src="http://lorempixel.com/400/800/food/" alt="A sports image">
+              <div class="card-block">
+  <h4 class="card-title text-success">A Blog Post</h4>
+  <p class="text-muted">2 days ago</p>
+  <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aspernatur voluptatem quia ab, quae ad excepturi voluptate laboriosam temporibus nostrum.</p>
+  <a href="#" class="btn btn-outline-success mt-2">Read the post...</a>
+</div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 mt-3 mb-3">
+            <div class="card card-outline-success card-white">
+              <img class="card-img-top img-responsive" src="http://lorempixel.com/400/800/nature/" alt="A sports image">
+              <div class="card-block">
+  <h4 class="card-title text-success">A Blog Post</h4>
+  <p class="text-muted">2 days ago</p>
+  <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aspernatur voluptatem quia ab, quae ad excepturi voluptate laboriosam temporibus nostrum.</p>
+  <a href="#" class="btn btn-outline-success mt-2">Read the post...</a>
+</div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 mt-3 mb-3">
+            <div class="card card-outline-success card-white">
+               <img class="card-img-top img-responsive" src="http://lorempixel.com/400/800/animals/" alt="A sports image">
+              <div class="card-block">
+  <h4 class="card-title text-success">A Blog Post</h4>
+  <p class="text-muted">2 days ago</p>
+  <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aspernatur voluptatem quia ab, quae ad excepturi voluptate laboriosam temporibus nostrum.</p>
+  <a href="#" class="btn btn-outline-success mt-2">Read the post...</a>
+</div>
+            </div>
+        </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="container-fluid pt-5 pb-5">
+  <div class="container">
+    <h2 class="h3 text-center">With css-customized <code>col</code> class:</h2>
+
+    <div class="row">
+        <div class="col mt-3 mb-3">
+            <div class="card card-block">
+              <img class="card-img-top img-fluid" src="http://lorempixel.com/400/800/food/" alt="A sports image">
+              <div class="card-block">
+  <h4 class="card-title text-success">A Blog Post</h4>
+  <p class="text-muted">2 days ago</p>
+  <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aspernatur voluptatem quia ab, quae ad excepturi voluptate laboriosam temporibus nostrum.</p>
+  <a href="#" class="btn btn-outline-success mt-2">Read the post...</a>
+</div>
+            </div>
+        </div>
+        <div class="col mt-3 mb-3">
+            <div class="card card-block">
+              <img class="card-img-top img-fluid" src="http://lorempixel.com/400/800/nature/" alt="A sports image">
+              <div class="card-block">
+  <h4 class="card-title text-success">A Blog Post</h4>
+  <p class="text-muted">2 days ago</p>
+  <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aspernatur voluptatem quia ab, quae ad excepturi voluptate laboriosam temporibus nostrum.</p>
+  <a href="#" class="btn btn-outline-success mt-2">Read the post...</a>
+</div>
+            </div>
+        </div>
+        <div class="col mt-3 mb-3">
+            <div class="card card-block">
+              <img class="card-img-top img-fluid" src="http://lorempixel.com/400/800/animals/" alt="A sports image">
+              <div class="card-block">
+  <h4 class="card-title text-success">A Blog Post</h4>
+  <p class="text-muted">2 days ago</p>
+  <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aspernatur voluptatem quia ab, quae ad excepturi voluptate laboriosam temporibus nostrum.</p>
+  <a href="#" class="btn btn-outline-success mt-2">Read the post...</a>
+</div>
+            </div>
+        </div>
+
+<!-- -->
+
+        <div class="col mt-3 mb-3">
+            <div class="card card-block">
+              <img class="card-img-top img-fluid" src="http://lorempixel.com/400/800/technics/" alt="A sports image">
+              <div class="card-block">
+  <h4 class="card-title text-success">A Blog Post</h4>
+  <p class="text-muted">2 days ago</p>
+  <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aspernatur voluptatem quia ab, quae ad excepturi voluptate laboriosam temporibus nostrum.</p>
+  <a href="#" class="btn btn-outline-success mt-2">Read the post...</a>
+</div>
+            </div>
+        </div>
+        <div class="col mt-3 mb-3">
+            <div class="card card-block">
+              <img class="card-img-top img-fluid" src="http://lorempixel.com/400/800/transport/" alt="A sports image">
+              <div class="card-block">
+  <h4 class="card-title text-success">A Blog Post</h4>
+  <p class="text-muted">2 days ago</p>
+  <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aspernatur voluptatem quia ab, quae ad excepturi voluptate laboriosam temporibus nostrum.</p>
+  <a href="#" class="btn btn-outline-success mt-2">Read the post...</a>
+</div>
+            </div>
+        </div>
+        <div class="col mt-3 mb-3">
+            <div class="card card-block">
+              <img class="card-img-top img-fluid" src="http://lorempixel.com/400/800/city/" alt="A sports image">
+              <div class="card-block">
+  <h4 class="card-title text-success">A Blog Post</h4>
+  <p class="text-muted">2 days ago</p>
+  <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aspernatur voluptatem quia ab, quae ad excepturi voluptate laboriosam temporibus nostrum.</p>
+  <a href="#" class="btn btn-outline-success mt-2">Read the post...</a>
+</div>
+            </div>
+        </div>
+        <div class="col mt-3 mb-3">
+            <div class="card card-block">
+              <img class="card-img-top img-fluid" src="http://lorempixel.com/400/800/business/" alt="A sports image">
+              <div class="card-block">
+  <h4 class="card-title text-success">A Blog Post</h4>
+  <p class="text-muted">2 days ago</p>
+  <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aspernatur voluptatem quia ab, quae ad excepturi voluptate laboriosam temporibus nostrum.</p>
+  <a href="#" class="btn btn-outline-success mt-2">Read the post...</a>
+</div>
+            </div>
+        </div>
+    </div>
+
+-->
+
+  </div>
+</div>
+
+	 <!-- Bootstrap core JavaScript
+ ================================================== -->
+ <!-- Placed at the end of the document so the pages load faster -->
+     <script src="js/jquery.js"></script>
+    <script src="js/tether.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    
+  
+  
+  
+  
+  
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+# Site Settings
+title: My Bootstrap 4 Blog
+description: Add your website description here, will be used as meta description too.
+baseurl: "" # the subpath of your site, e.g. /blog
+
+# Build settings
+markdown: kramdown
+permalink: none
+
+# Assets 
+#
+# Enable the use of @imports in Jekyll:
+sass:
+  sass_dir:   assets/scss
+  style:      :nested

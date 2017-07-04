@@ -1,0 +1,20 @@
+<script>
+    // plugin definition
+
+    (function ($) {
+        $.fn.classToggler = function (oldClass, newClass) {
+                return this.each(function(i, elem) {
+                  var $currentIndex = $(elem);
+
+                  $currentIndex.toggleClass(oldClass + " " + newClass);             
+                });
+      };
+    })(jQuery);
+
+    // calling the plugin
+    $('#switchNavbar').click(function() {
+      $('.navbar')
+        .classToggler("bg-faded", "bg-success")
+        .classToggler("navbar-dark", "navbar-inverse");
+    });
+</script>

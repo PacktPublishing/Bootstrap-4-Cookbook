@@ -1,0 +1,14 @@
+{
+	"index": {
+		"title": "Welcome to Chapter 9"
+	},
+	"recipe09-01": {
+		"title": "Recipe 09-01: Customizing Bootstrap Builds by Cherry-picking Sass Partials"
+	},
+	"recipe09-02": {
+		"title": "Recipe 09-02: Cleaning Up Unused CSS with UnCSS and Grunt"
+	},
+	"recipe09-03": {
+		"title": "Recipe 09-03: Removing CSS comments with grunt-strip-css-comments"
+	}
+}
