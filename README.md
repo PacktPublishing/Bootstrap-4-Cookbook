@@ -40,6 +40,3 @@ Angular via npm.
 * [Mastering Bootstrap 4](https://www.packtpub.com/web-development/mastering-bootstrap-4?utm_source=github&utm_medium=repository&utm_campaign=9781783981120)
 
 * [Learning Bootstrap 4 - Second Edition](https://www.packtpub.com/web-development/learning-bootstrap-4-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781785881008)
-
-### Suggestions and Feedback
-[Click here](https://docs.google.com/forms/d/e/1FAIpQLSe5qwunkGf6PUvzPirPDtuy1Du5Rlzew23UBp2S-P3wB-GcwQ/viewform) if you have any feedback or suggestions.
