@@ -40,3 +40,7 @@ Angular via npm.
 * [Mastering Bootstrap 4](https://www.packtpub.com/web-development/mastering-bootstrap-4?utm_source=github&utm_medium=repository&utm_campaign=9781783981120)
 
 * [Learning Bootstrap 4 - Second Edition](https://www.packtpub.com/web-development/learning-bootstrap-4-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781785881008)
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781785889295">https://packt.link/free-ebook/9781785889295 </a> </p>
